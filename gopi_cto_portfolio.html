@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gopi K Kancharla — CTO Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #0c1116;
+        --card: #121922;
+        --muted: #9fb0c3;
+        --ink: #e8f0fb;
+        --accent: #63b3ed;
+        --accent-hover: #4299e1;
+        --pill: #1c2733;
+        --pill-hover: #253441;
+        --border: #1e2b3b;
+        --border-light: #2a3746;
+        --success: #48bb78;
+        --warning: #ed8936;
+        --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --gradient-card: linear-gradient(145deg, #111a25 0%, #0f1822 50%, #131b28 100%);
+        --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+        --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.25);
+        --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        background: linear-gradient(180deg, #0b1015, #0e1822 45%, #0b1015);
+        color: var(--ink);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(600px at 50% 200px, rgba(99, 179, 237, 0.05), transparent 50%);
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      a:hover {
+        color: var(--accent-hover);
+      }
+      header.hero {
+        padding: 80px 20px 48px;
+        text-align: center;
+        position: relative;
+      }
+
+      header.hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(800px at 50% 0%, rgba(99, 179, 237, 0.08), transparent 60%);
+        pointer-events: none;
+      }
+
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+        position: relative;
+      }
+      .title {
+        font-size: clamp(28px, 4vw, 46px);
+        font-weight: 800;
+        letter-spacing: 0.3px;
+      }
+      .subtitle {
+        color: var(--muted);
+        margin-top: 8px;
+        font-size: clamp(14px, 2vw, 18px);
+      }
+      .cta-row {
+        margin-top: 20px;
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .btn {
+        background: var(--accent);
+        color: #06121d;
+        padding: 12px 20px;
+        border-radius: 16px;
+        font-weight: 700;
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        transition: all 0.2s ease;
+        box-shadow: var(--shadow-sm);
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background: var(--accent-hover);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .btn.secondary {
+        background: var(--pill);
+        color: var(--ink);
+        border: 1px solid var(--border-light);
+      }
+
+      .btn.secondary:hover {
+        background: var(--pill-hover);
+        border-color: var(--accent);
+        transform: translateY(-2px);
+      }
+      .grid {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      }
+      section {
+        padding: 32px 0;
+      }
+      .card {
+        background: var(--gradient-card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 28px;
+        box-shadow: var(--shadow-lg);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: var(--gradient-primary);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        border-color: var(--border-light);
+      }
+
+      .card:hover::before {
+        opacity: 1;
+      }
+      h2 {
+        font-size: 22px;
+        margin: 0 0 12px 0;
+      }
+      ul {
+        margin: 8px 0 0 20px;
+        color: var(--ink);
+        line-height: 1.5;
+      }
+      .pill {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: var(--pill);
+        border: 1px solid #203241;
+        color: var(--muted);
+        font-size: 12px;
+        margin: 0 8px 8px 0;
+        transition: all 0.2s ease;
+        font-weight: 500;
+      }
+
+      .hero .pill {
+        background: linear-gradient(135deg, rgba(99, 179, 237, 0.15), rgba(118, 75, 162, 0.15));
+        border: 1px solid rgba(99, 179, 237, 0.3);
+        color: var(--accent);
+        font-weight: 600;
+        margin-bottom: 16px;
+        box-shadow: var(--shadow-sm);
+      }
+      footer {
+        padding: 26px 20px 48px;
+        color: #9fb0c3;
+        text-align: center;
+      }
+      .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .kpi {
+        font-weight: 800;
+        font-size: 18px;
+        color: #c9e5ff;
+      }
+      .sep {
+        height: 1px;
+        background: #1c2835;
+        border: none;
+        margin: 24px 0;
+      }
+      .small {
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <div class="pill">CTO • Digital Transformation • Cloud • Data • AI/ML</div>
+        <h1 class="title">Gopi K Kancharla</h1>
+        <p class="subtitle">Hands‑on Technology Executive | Head of Technology (Banking & Commercial Lending - Toyota Financial Services) | Ex‑Capital One</p>
+        <div class="cta-row">
+          <a class="btn" href="mailto:haigopi@gmail.com">Email</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/haigopi" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn secondary" href="https://medium.com/thinkspecial" target="_blank" rel="noopener">ThinkSpecial Articles</a>
+          <a class="btn secondary" href="https://scholar.google.com/citations?user=cpw488YAAAAJ" target="_blank" rel="noopener">Patents & Citations</a>
+          <a class="btn" href="GopiK_Kancharla_CTO_Portfolio.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="grid">
+        <div class="card">
+          <h2>Executive Summary</h2>
+          <p class="small">
+            Technology executive with deep experience across cloud platforms, enterprise architecture, data engineering, and ML/AI. Built, scaled, and operated mission‑critical platforms in financial services and enterprise storage, leading large
+            programs through modernization and transformation. Known for pragmatic execution, measurable business outcomes, and a builder mindset.
+          </p>
+          <div class="badges">
+            <span class="pill">Cloud‑Native & DevSecOps</span>
+            <span class="pill">Enterprise Architecture</span>
+            <span class="pill">API Platforms</span>
+            <span class="pill">Site Reliability & ITSM</span>
+            <span class="pill">Digital Marketing Tech</span>
+            <span class="pill">Commercial Lending Tech</span>
+            <span class="pill">Auto Finance Tech</span>
+            <span class="pill">Auto Insurance Tech</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Role Fit: CTO/Head of Technology - Larger Organizations</h2>
+          <ul>
+            <li><span class="kpi">Technology Strategy:</span> Define and execute multi‑year platform strategy aligned to business outcomes (EV ecosystem, zero‑friction customer journeys).</li>
+            <li><span class="kpi">Operations & Resiliency:</span> Mature ITIL/ITSM practices, SLO‑based operations, and enterprise resiliency across end‑user, hosting and service delivery.</li>
+            <li><span class="kpi">Cloud & API Enablement:</span> Lead cloud landing zones, API management, and shared DevSecOps capabilities to accelerate time‑to‑market.</li>
+            <li><span class="kpi">Architecture & Innovation:</span> Govern standards, patterns, and reference architectures; incubate innovation with centers of excellence and communities of practice.</li>
+            <li><span class="kpi">Sourcing & Vendor Mgmt:</span> Optimize sourcing models, SLAs, and partner performance; drive shared tooling, metrics, and license efficiency.</li>
+            <li><span class="kpi">People & Culture:</span> Coach and empower high‑performing leaders and engineers in a continuous‑improvement culture.</li>
+            <li><span class="kpi">Budget & Governance:</span> Own financial stewardship, technical‑debt SMART goals, and transparent KPIs.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Highlights</h2>
+          <ul>
+            <li>Head of Technology for Banking & Commercial Lending platforms; design and delivery of scalable, fault‑tolerant systems serving dealers and customers.</li>
+            <li>Led digital auto marketing, ML/AI, decisioning, pricing, and multi‑lending platforms; modernized cloud architecture and developer velocity.</li>
+            <li>Primary inventor on 30+ patents; speaker and prolific author with 1M+ reads (distributed systems, cloud, UI, data).</li>
+            <li>Successfully delivered cloud storage and hybrid cloud products (ECS, ViPR, UIM) and large‑scale API integrations.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Board of Director Positions</h2>
+          <p class="small">Strategic advisor and board member for leading Indian technology portals, providing governance, strategic direction, and technology oversight for high-growth digital platforms.</p>
+          <ul>
+            <li><span class="kpi">VantaShala.com:</span> Leading HomeChefs MarketPlace technology portal, transforming healthy homemade food, fighting against unhealthy eating habits.</li>
+            <li><span class="kpi">RunningTicker.com:</span> Premier financial information and market data platform serving investors across India.</li>
+            <li><span class="kpi">RentMitra.net:</span> Innovative rental marketplace platform connecting property owners and tenants nationwide.</li>
+            <li><span class="kpi">AlliBilli.com:</span> Founder and innovative all in one news platform helping elderly people.</li>
+          </ul>
+          <br />
+          <div class="badges">
+            <span class="pill">EdTech Platform</span>
+            <span class="pill">FinTech & Market Data</span>
+            <span class="pill">PropTech & Marketplace</span>
+            <span class="pill">Strategic Governance</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Capabilities</h2>
+          <div class="grid">
+            <div>
+              <h3 style="margin: 8px 0 6px">Enterprise Platforms</h3>
+              <ul>
+                <li>API strategy & management</li>
+                <li>DevSecOps enablement (CI/CD, policy as code)</li>
+                <li>Observability & resiliency engineering</li>
+                <li>Data & ML platforms</li>
+              </ul>
+            </div>
+            <div>
+              <h3 style="margin: 8px 0 6px">Operations & ITSM</h3>
+              <ul>
+                <li>ITIL practices, incident/problem management</li>
+                <li>Service delivery & end‑user enablement</li>
+                <li>Capacity, cost & risk governance</li>
+                <li>Business continuity & DR</li>
+              </ul>
+            </div>
+            <div>
+              <h3 style="margin: 8px 0 6px">Leadership</h3>
+              <ul>
+                <li>Org design & sourcing models</li>
+                <li>Coaching, mentoring, and empowerment</li>
+                <li>Vendor management & SLAs</li>
+                <li>Budget planning & portfolio management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Selected Publications & Talks</h2>
+          <ul>
+            <li><a href="https://medium.com/thinkspecial" target="_blank" rel="noopener">ThinkSpecial — 100+ engineering articles - Millions of reads! </a></li>
+            <li><a href="https://dzone.com/articles/redis-reconnection-resiliency" target="_blank" rel="noopener">Redis Reconnection Resiliency (dZone)</a></li>
+            <li><a href="https://industrytoday.com/drone-performance-enhanced-by-new-software-capabilities/" target="_blank" rel="noopener">Drone Networking & Software (Industry Today)</a></li>
+            <li><a href="https://mydigitalpublication.com/publication/?m=23209&i=688158&p=34" target="_blank" rel="noopener">Distributed Systems & Executive Leadership (Enterprise Executive)</a></li>
+            <li><a href="https://www.cloudcomputingexpo.com/" target="_blank" rel="noopener">Speaker — Cloud Expo International</a></li>
+          </ul>
+          <hr class="sep" />
+          <p class="small">Patents & Citations: <a href="https://scholar.google.com/citations?user=cpw488YAAAAJ" target="_blank" rel="noopener">Google Scholar Profile</a></p>
+        </div>
+
+        <div class="card">
+          <h2>Leadership Philosophy</h2>
+          <p class="small">“Arise, awake, and stop not till the goal is reached.” — Swami Vivekananda</p>
+          <p class="small">Lead with clarity, ship iteratively, measure outcomes, and scale what works. Balance innovation with operational excellence.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap small">
+        Built for the GM Financial CTO role. This site includes clickable links to writing, patents, and profile.
+        <br />Frisco, Texas, USA • <a href="mailto:haigopi@gmail.com">haigopi@gmail.com</a>
+      </div>
+    </footer>
+  </body>
+</html>
