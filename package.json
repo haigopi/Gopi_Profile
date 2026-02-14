@@ -1,0 +1,11 @@
+{
+  "name": "gopi-profile",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "puppeteer-core": "^24.4.0"
+  },
+  "scripts": {
+    "pdf": "node scripts/render-pdf.mjs"
+  }
+}
