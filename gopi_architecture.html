@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gopi K Kancharla — AI Architecture Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --bg: #0c1116;
+        --card: #121922;
+        --muted: #9fb0c3;
+        --ink: #e8f0fb;
+        --accent: #63b3ed;
+        --accent-hover: #4299e1;
+        --pill: #1c2733;
+        --pill-hover: #253441;
+        --border: #1e2b3b;
+        --border-light: #2a3746;
+        --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --gradient-card: linear-gradient(145deg, #111a25 0%, #0f1822 50%, #131b28 100%);
+        --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+        --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.25);
+        --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Arial;
+        background: linear-gradient(180deg, #0b1015, #0e1822 45%, #0b1015);
+        color: var(--ink);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(600px at 50% 200px, rgba(99, 179, 237, 0.06), transparent 52%), radial-gradient(800px at 12% 18%, rgba(118, 75, 162, 0.06), transparent 60%);
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--accent-hover);
+      }
+
+      header.hero {
+        padding: 80px 20px 48px;
+        text-align: center;
+      }
+
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .title {
+        font-size: clamp(28px, 4vw, 46px);
+        font-weight: 800;
+        margin: 0;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        margin-top: 12px;
+        font-size: clamp(14px, 2vw, 18px);
+      }
+
+      .cta-row {
+        margin-top: 20px;
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        background: var(--accent);
+        color: #06121d;
+        padding: 12px 20px;
+        border-radius: 16px;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .btn:hover {
+        background: var(--accent-hover);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .btn.secondary {
+        background: var(--pill);
+        color: var(--ink);
+        border: 1px solid var(--border-light);
+      }
+
+      .btn.secondary:hover {
+        background: var(--pill-hover);
+        border-color: var(--accent);
+      }
+
+      section {
+        padding: 32px 0;
+      }
+
+      .grid {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      }
+
+      .card {
+        background: var(--gradient-card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 28px;
+        box-shadow: var(--shadow-lg);
+      }
+
+      .pill {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: var(--pill);
+        border: 1px solid #203241;
+        color: var(--muted);
+        font-size: 12px;
+        margin: 0 8px 8px 0;
+      }
+
+      .hero .pill {
+        background: linear-gradient(135deg, rgba(99, 179, 237, 0.15), rgba(118, 75, 162, 0.15));
+        border: 1px solid rgba(99, 179, 237, 0.3);
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+      }
+
+      ul {
+        margin: 10px 0 0 20px;
+      }
+
+      .kpi {
+        font-weight: 800;
+        color: #c9e5ff;
+      }
+
+      footer {
+        padding: 32px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 13px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HERO -->
+    <header class="hero">
+      <div class="wrap">
+        <div class="pill">CTO • Architecture • Cloud • Data • GenAI Platforms • Strategy</div>
+
+        <h1 class="title">Gopi K Kancharla</h1>
+
+        <p class="subtitle">Technology Executive | Head of Technology - Toyota Financial Services | Ex‑Capital One</p>
+
+        <div class="cta-row">
+          <button class="btn secondary" onclick="alert('Email: haigopi@gmail.com')">✉️ Email</button>
+          <button class="btn secondary" onclick="alert('Phone: +1 469 388 2798')">☎️ Phone</button>
+
+          <a class="btn secondary" href="https://www.linkedin.com/in/haigopi" target="_blank">LinkedIn</a>
+          <a class="btn secondary" href="https://medium.com/thinkspecial" target="_blank">ThinkSpecial Articles</a>
+          <a class="btn secondary" href="https://scholar.google.com/citations?user=cpw488YAAAAJ" target="_blank">Patents & Citations</a>
+          <a class="btn secondary" href="Gopi K Kancharla — AI Architecture Profile.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="wrap">
+      <!-- EXEC SUMMARY -->
+      <section>
+        <div class="card">
+          <h2>Executive Summary</h2>
+          <p>
+            Software Engineering and Architecture leader with 20+ years of experience designing and scaling cloud-native, secure, and governed AI/ML systems. Proven track record bridging cutting-edge AI research (LLMs, agentic workflows, RAG) with
+            enterprise-grade architecture, controls, and production reliability. Known for defining AI strategy, building core reusable AI foundations, and partnering with CIO-level leaders to deliver measurable business outcomes through responsible
+            AI adoption.
+          </p>
+
+          <div style="margin-top: 18px">
+            <span class="pill">AI Governance</span>
+            <span class="pill">Model Selection & Routing</span>
+            <span class="pill">GenAI & Agentic Systems</span>
+            <span class="pill">AI Architecture</span>
+            <span class="pill">LLM Governance</span>
+            <span class="pill">Agent Frameworks</span>
+            <span class="pill">RAG + Vector Platforms</span>
+            <span class="pill">Model Risk Management</span>
+            <span class="pill">Snowflake + AWS</span>
+            <span class="pill">Platform Engineering</span>
+            <span class="pill">Enterprise Architecture</span>
+            <span class="pill">API: Micro Services and Micro Frontends </span>
+            <span class="pill">MLOps & LLMOps</span>
+            <span class="pill">Security & Risk</span>
+            <span class="pill">Advanced Automation - MCP</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPECIALTIES -->
+      <section class="grid">
+        <div class="card">
+          <h2>Technology Strengths</h2>
+          <ul>
+            <li>
+              <span class="kpi">AI Strategy:</span>
+              Defined AI roadmaps aligned to business priorities, ethical standards, and scalable delivery practices inside TFS and Capital One.
+            </li>
+
+            <li>
+              <span class="kpi">LLM & Agentic Systems at Scale:</span>
+              Strong expertise and hands on across OpenAI, Claude, Gemini, LLaMA, LangChain, LangGraph, RAG, prompt + agent lifecycle governance.
+            </li>
+
+            <li>
+              <span class="kpi">AI Governance, Risk & Security:</span>
+              Embed privacy enforcement, Crtic Bots, audit-ready observability, and policy guardrails.
+            </li>
+
+            <li>
+              <span class="kpi">AI Initiative-to-Production Execution:</span>
+              Led AI initiatives through deployment, operational controls, and SLO-driven reliability. Examples include TFS's Commercial Lending Syndicate Loans AI platform and Capital One's MarTech AI services.
+            </li>
+
+            <li>
+              <span class="kpi">Executive Influence & Transformation:</span>
+              Partner with CIOs, MVPs and SVPs, architects, security, risk & compliance and delivery teams to embed AI practices directly into engineering operating models.
+            </li>
+          </ul>
+        </div>
+
+        <!-- CAREER -->
+        <div class="card">
+          <h2>Recent AI Leadership & Experience</h2>
+          <ul>
+            <li>
+              <span class="kpi">AI Architecture Leadership:</span>
+              Defined multi-year AI platform strategy, core standards, and governed delivery models enabling scalable GenAI adoption at TFS and Capital One.
+            </li>
+
+            <li>
+              <span class="kpi">AI Platforms in Production:</span>
+              Delivered enterprise-grade AI/ML systems with MLOps controls, secure model access, and operational reliability.
+            </li>
+
+            <li>
+              <span class="kpi">Executive Partnership:</span>
+              Trusted advisor to CIO-level leaders driving prioritized AI initiatives aligned to enterprise objectives.
+            </li>
+
+            <li>
+              <span class="kpi">Innovation & Thought Leadership:</span>
+              28 patents and extensive writing on AI platforms, distributed systems, and scalable architecture.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="card">
+          <h2>Career Highlights (Selected)</h2>
+          <ul>
+            <li>
+              <span class="kpi">Toyota Financial Services:</span> Head of Technology Commercial Lending platforms; established a two-year roadmap and execution engine; delivered a new in-house Commercial Lending Loan Origination System in under six
+              months.
+            </li>
+            <li>
+              <span class="kpi">Capital One:</span> Director, Marketing Technology & Analytics; set MarTech strategy to reduce vendor lock-in, elevate data governance, and align platforms to growth priorities; delivered $240M in revenue impact.
+            </li>
+            <li><span class="kpi">DellEMC (EMC):</span> Engineering leader for enterprise cloud & storage; defined hybrid cloud strategy and a two-year roadmap to prioritize resiliency, scale, and customer outcomes; led $11M programs.</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="card">
+        <h2>What I Build (Platforms & Capabilities)</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>AI Platform Foundations</h3>
+            <ul>
+              <li>Reusable APIs & SDKs for model access and orchestration</li>
+              <li>Model selection & routing (policy-driven) across providers/models with fallbacks</li>
+              <li>Model catalog with quality, latency, and cost tradeoffs for use-case fit</li>
+              <li>LLMOps: evaluation, telemetry, regression tests, rollout controls</li>
+              <li>Model registry, lineage, and reproducibility standards</li>
+              <li>Reference architectures and golden paths for teams</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Responsible AI & Governance</h3>
+            <ul>
+              <li>Access controls and data entitlement patterns</li>
+              <li>Risk classification by use case and model behavior</li>
+              <li>Human-in-the-loop workflows for high-impact decisions</li>
+              <li>Audit-ready logging and policy enforcement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <section>
+        <div class="card">
+          <h2>Education & Credentials</h2>
+          <ul>
+            <li><span class="kpi">Masters:</span> Information Systems, Nagarjuna University, India</li>
+            <li><span class="kpi">Certifications:</span> AWS Solutions Architect • Java • SAFe</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      Frisco, Texas •
+      <a href="mailto:haigopi@gmail.com">haigopi@gmail.com</a> • +1 469 388 2798
+      <br />
+      I used CoPilot Agent inside Visual Studio Code using GPT-5.2 model to help create the layout of this page and my resume. -- Gopi
+    </footer>
+  </body>
+</html>
