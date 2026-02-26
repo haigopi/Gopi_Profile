@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Gopi K Kancharla — Profile</title>
+      <link href="https://fonts.googleapis.com" rel="preconnect">
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+      <style>
+         :root {
+         --bg: #0c1116;
+         --card: #121922;
+         --muted: #9fb0c3;
+         --ink: #e8f0fb;
+         --accent: #63b3ed;
+         --accent-hover: #4299e1;
+         --pill: #1c2733;
+         --pill-hover: #253441;
+         --border: #1e2b3b;
+         --border-light: #2a3746;
+         --success: #48bb78;
+         --warning: #ed8936;
+         --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+         --gradient-card: linear-gradient(145deg, #111a25 0%, #0f1822 50%, #131b28 100%);
+         --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+         --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.25);
+         --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
+         }
+         * {
+         box-sizing: border-box;
+         }
+         body {
+         margin: 0;
+         font-family:
+         Inter,
+         system-ui,
+         -apple-system,
+         Segoe UI,
+         Roboto,
+         "Helvetica Neue",
+         Arial;
+         background: linear-gradient(180deg, #0b1015, #0e1822 45%, #0b1015);
+         color: var(--ink);
+         line-height: 1.6;
+         overflow-x: hidden;
+         }
+         body::before {
+         content: "";
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background:
+         radial-gradient(600px at 50% 200px, rgba(99, 179, 237, 0.06), transparent 52%), radial-gradient(800px at 12% 18%, rgba(118, 75, 162, 0.06), transparent 60%), radial-gradient(900px at 88% 28%, rgba(99, 179, 237, 0.04), transparent 62%);
+         pointer-events: none;
+         z-index: -1;
+         }
+         a {
+         color: var(--accent);
+         text-decoration: none;
+         transition: color 0.2s ease;
+         }
+         a:hover {
+         color: var(--accent-hover);
+         }
+         header.hero {
+         padding: 80px 20px 48px;
+         text-align: center;
+         position: relative;
+         }
+         header.hero::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: radial-gradient(800px at 50% 0%, rgba(99, 179, 237, 0.08), transparent 60%);
+         pointer-events: none;
+         }
+         .wrap {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 24px;
+         position: relative;
+         }
+         .title {
+         font-size: clamp(28px, 4vw, 46px);
+         font-weight: 800;
+         letter-spacing: 0.3px;
+         margin: 0;
+         }
+         .subtitle {
+         color: var(--muted);
+         margin: 8px 0 0;
+         font-size: clamp(14px, 2vw, 18px);
+         }
+         .cta-row {
+         margin-top: 20px;
+         display: flex;
+         gap: 12px;
+         justify-content: center;
+         flex-wrap: wrap;
+         }
+         .btn {
+         background: var(--accent);
+         color: #06121d;
+         padding: 8px 16px;
+         border-radius: 16px;
+         font-weight: 700;
+         display: inline-flex;
+         gap: 8px;
+         align-items: center;
+         transition: all 0.2s ease;
+         box-shadow: var(--shadow-sm);
+         border: none;
+         cursor: pointer;
+         }
+         .btn:hover {
+         background: var(--accent-hover);
+         transform: translateY(-2px);
+         box-shadow: var(--shadow-md);
+         }
+         .btn.secondary {
+         background: var(--pill);
+         color: var(--ink);
+         border: 1px solid var(--border-light);
+         }
+         .btn.secondary:hover {
+         background: var(--pill-hover);
+         border-color: var(--accent);
+         transform: translateY(-2px);
+         }
+         /* Ensure link hover styles don't override button text color */
+         a.btn {
+         color: #06121d;
+         }
+         a.btn:hover,
+         a.btn:focus {
+         color: #06121d;
+         }
+         a.btn.secondary {
+         color: var(--ink);
+         }
+         a.btn.secondary:hover,
+         a.btn.secondary:focus {
+         color: var(--ink);
+         }
+         section {
+         padding: 32px 0;
+         }
+         .grid {
+         display: grid;
+         gap: 24px;
+         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+         }
+         .card {
+         background: var(--gradient-card);
+         border: 1px solid var(--border);
+         border-radius: 24px;
+         padding: 28px;
+         box-shadow: var(--shadow-lg);
+         transition: all 0.3s ease;
+         position: relative;
+         overflow: hidden;
+         }
+         .card::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         height: 2px;
+         background: var(--gradient-primary);
+         opacity: 0;
+         transition: opacity 0.3s ease;
+         }
+         .card:hover {
+         transform: translateY(-4px);
+         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+         border-color: var(--border-light);
+         }
+         .card:hover::before {
+         opacity: 1;
+         }
+         .pill {
+         display: inline-block;
+         padding: 8px 14px;
+         border-radius: 999px;
+         background: var(--pill);
+         border: 1px solid #203241;
+         color: var(--muted);
+         font-size: 12px;
+         margin: 0 8px 8px 0;
+         transition: all 0.2s ease;
+         font-weight: 500;
+         }
+         .hero .pill {
+         background: linear-gradient(135deg, rgba(99, 179, 237, 0.15), rgba(118, 75, 162, 0.15));
+         border: 1px solid rgba(99, 179, 237, 0.3);
+         color: var(--accent);
+         font-weight: 600;
+         margin-bottom: 16px;
+         box-shadow: var(--shadow-sm);
+         }
+         h2 {
+         font-size: 22px;
+         margin: 0 0 12px 0;
+         }
+         h3 {
+         margin: 8px 0 6px;
+         font-size: 16px;
+         }
+         ul {
+         margin: 10px 0 0 20px;
+         line-height: 1.5;
+         }
+         .kpi {
+         font-weight: 800;
+         font-size: 18px;
+         color: #c9e5ff;
+         }
+         .sep {
+         height: 1px;
+         background: #1c2835;
+         border: none;
+         margin: 18px 0;
+         }
+         .small {
+         color: var(--muted);
+         font-size: 15px;
+         line-height: 1.6;
+         }
+         footer {
+         padding: 26px 20px 48px;
+         color: #9fb0c3;
+         text-align: center;
+         }
+         .badges {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 8px;
+         justify-content: center;
+         }
+         @media print {
+         @page {
+         size: A4;
+         margin: 12mm;
+         }
+         * {
+         -webkit-print-color-adjust: exact;
+         print-color-adjust: exact;
+         }
+         body {
+         background: linear-gradient(180deg, #0b1015, #0e1822 45%, #0b1015) !important;
+         }
+         .card,
+         .btn {
+         box-shadow: none !important;
+         transform: none !important;
+         }
+         a {
+         text-decoration: none !important;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <header class="hero">
+         <div class="wrap">
+            <div class="pill">CIO • CTO • Strategy • Cloud • Data • AI/ML</div>
+            <h1 class="title">Gopi K Kancharla</h1>
+            <p class="subtitle">Technology Executive | Head of Technology | Toyota | Ex‑Capital One </p>
+            <div class="cta-row">
+               <button class="btn" onclick="alert('Email: haigopi@gmail.com')">✉️ Email</button>
+               <button class="btn" onclick="alert('Phone: +1 469 388 2798')">☎️ Phone</button>
+               <a class="btn secondary" href="https://www.linkedin.com/in/haigopi" target="_blank" rel="noopener">LinkedIn</a>
+               <a class="btn secondary" href="https://medium.com/thinkspecial" target="_blank" rel="noopener">ThinkSpecial Articles</a>
+               <a class="btn secondary" href="https://scholar.google.com/citations?user=cpw488YAAAAJ" target="_blank" rel="noopener">Patents & Citations</a>
+               <a class="btn" href="Gopi_Resume.pdf" download>Download PDF</a>
+            </div>
+         </div>
+      </header>
+      <main class="wrap">
+         <section>
+            <div class="card">
+               <h2>Executive Summary</h2>
+               <p class="small">
+                  Technology executive with deep experience building and operating enterprise platforms across cloud, data, security, and AI-enabled decisioning. Known for pragmatic execution and measurable outcomes: modernizing legacy stacks, improving
+                  resiliency and governance, and scaling platforms with strong DevSecOps.
+               </p>
+               <hr class="sep">
+               <div class="badges" aria-label="Executive Summary focus areas" style="justify-content: center; margin-top: 12px">
+                  <span class="pill">Platform Engineering</span>
+                  <span class="pill">Enterprise Architecture</span>
+                  <span class="pill">API: Micro Services and Micro Frontends </span>
+                  <span class="pill">AI Governance</span>
+                  <span class="pill">Model Selection & Routing</span>
+                  <span class="pill">GenAI & Agentic Systems</span>
+                  <span class="pill">MLOps & LLMOps</span>
+                  <span class="pill">DevOps</span>
+                  <span class="pill">Security & Risk</span>
+                  <span class="pill">Advanced Automation</span>
+                  <span class="pill">Test Automation</span>
+               </div>
+            </div>
+         </section>
+         <section class="grid">
+            <div class="card">
+               <h2>Career Highlights (Selected)</h2>
+               <ul style="margin-left: 0;">
+                  <li>
+                     <span class="kpi">Head of Technology</span>
+                     <br><span class="small" style="color: var(--accent); font-weight: 500;">Toyota Financial Services, Commercial Lending - Plano, TX</span>
+                     <br>
+                     <span class="small">
+                        <ul style="margin-left: 0;">
+                           <li>Build a scalable $30B brand new loan origination platform </li>
+                           <li>Built AI/ML platform for credit risk and customer experience, driving 15% lift in approval rates and 20% reduction in defaults.</li>
+                           <li>Implemented robust controls and monitoring for AI systems, ensuring regulatory compliance and reducing risk incidents by 25%.</li>
+                        </ul>
+                     </span>
+                  </li>
+                  <br>
+                  <li>
+                     <span class="kpi">Director, Software Engineering</span>
+                     <br><span class="small" style="color: var(--accent); font-weight: 500;">Capital One - Plano, TX</span>
+                     <br>
+                     <span class="small">
+                        <ul style="margin-left: 0;">
+                           <li>Led Capital One's software engineering teams, driving innovation and operational excellence.</li>
+                           <li>Built AI/ML driven Marketing Technology & Analytics platform, enhancing customer targeting and engagement.</li>
+                           <li>Built Decisioning Consumer Loan Origination Systems</li>
+                        </ul>
+                     </span>
+                  </li>
+                  <br>
+                  <li>
+                     <span class="kpi">Sr Cloud Software Architect</span>
+                     <br><span class="small" style="color: var(--accent); font-weight: 500;">DellEMC (EMC) - Berkeley Heights, NJ</span>
+                     <br>
+                     <span class="small">
+                        <ul style="margin-left: 0;">
+                           <li>Designed and led architecture of ViPR & UIM Products for Cloud Storage Optimization</li>
+                           <li>Designed Scalable, Fault Tolerant, HA & DR ready cloud architecture</li>
+                           <li>Led $11M projects with a two-year roadmap</li>
+                        </ul>
+                     </span>
+                  </li>
+                  <br>
+                  <li>
+                     <span class="kpi">Frontend Engineering Leader</span>
+                     <br><span class="small" style="color: var(--accent); font-weight: 500;">IPC Systems Inc - Fairfield, CT</span>
+                     <br>
+                     <span class="small">
+                        <ul style="margin-left: 0;">
+                           <li>Built next-gen trading platforms with real-time data and low-latency execution.</li>
+                           <li>Led a global team of 60+, ensuring round-the-clock development in the trading industry. Established coding, design, and architectural standards, driving significant impact in the enterprise trading domain.</li>
+                        </ul>
+                     </span>
+                  </li>
+                  <br>
+                  <li>
+                     <span class="kpi">Lead Software Engineer</span>
+                     <br><span class="small" style="color: var(--accent); font-weight: 500;">IBM/Adesa Inc - B'lore, India • Bari, Italy • Carmel, IN</span>
+                     <br>
+                     <span class="small">
+                        <ul style="margin-left: 0;">
+                           <li>Delivered complex applications for managing vehicle inventory from 12 vendors via files and Salesforce, displaying live auction floor data.Developed Fullstack Web Applications for online car sales through auction rollover processes.</li>
+                           <li>Built ACG Express @IBM, Adesa Online Auctioning Systems</li>
+                        </ul>
+                     </span>
+                  </li>
+               </ul>
+            </div>
+            <div class="card">
+               <h2>Board Member and Articles</h2>
+               <ul style="margin-left: 0;">
+                  <li>
+                     <span class="kpi">Own 28 Patents out of 37 Issued as a Primary Inventor (<a href="https://scholar.google.com/citations?user=cpw488YAAAAJ" target="_blank" rel="noopener">Google Scholar</a>)</span>
+                  </li>
+                  <br>
+                  <li>
+                     <span class="kpi">Advisory Board Member/Founder</span>
+                     <br>
+                     <span class="small" style="color: var(--accent); font-weight: 500;">
+                        <br>
+                        <div style="color: whitesmoke;">-> RentMitra Inc - <a href="https://rentmitra.lovable.app/" target="_blank" rel="noopener">https://rentmitra.lovable.app/</a></div>
+                        <div class="small">AI Powered Early Stage Startup for rental marketplace platform connecting property owners and tenants nationwide, producing legal agreement solutions.</div>
+                        <br>
+                        <div style="color: whitesmoke;">-> GingerKnife Inc - <a href="https://VantaShala.com/" target="_blank" rel="noopener">https://VantaShala.com/</a></div>
+                        <div class="small">Leading HomeChefs MarketPlace AI backed technology, transforming healthy homemade food, fighting against unhealthy eating habits.</div>
+                        <br>
+                        <div style="color: whitesmoke;">-> AlliBilli.com - <a href="https://allibilli.com/" target="_blank" rel="noopener">https://allibilli.com/</a></div>
+                        <div class="small">Founder and innovative all in one news platform helping elderly people.</div>
+                     </span>
+                  </li>
+                  <br>
+                  <li>
+                     <span class="kpi">Thought leadership:</span>
+                     <br>
+                     <span class="small" style="color: var(--accent); font-weight: 500;">
+                        <br>
+                        <div style="color: whitesmoke;">-> ThinkSpecial</div>
+                        <div> - <a href="https://medium.com/thinkspecial" target="_blank" rel="noopener">https://medium.com/thinkspecial</a> - <span class="small">Written 100+ articles on technology, leadership, and innovation.</span></div>
+                        <br>
+                        <div style="color: whitesmoke;">-> Speaker - Cloud Expo International</div>
+                        <div class="small">Presented on the topic of random and even distribution of jobs and the implementation of an executive leader election algorithm in the cloud environment, specifically within the context of Distributed Systems.</div>
+                        <br>
+                        <div style="color: whitesmoke;">-> Industry Today</div>
+                        <div class="small"><a href="https://industrytoday.com/drone-performance-enhanced-by-new-software-capabilities/" target="_blank" rel="noopener">https://industrytoday.com/drone-performance-enhanced-by-new-software-capabilities</a> : Drones have seen a significant usage by autonomus netwroking where they can watch over borders and sensitive areas while keeping themselves safe.</div>
+                        <br>
+                        <div style="color: whitesmoke;">-> Enterprise Executive</div>
+                        <div class="small"><a href="https://mydigitalpublication.com/publication/?m=23209&i=688158&p=34" target="_blank" rel="noopener">https://mydigitalpublication.com/publication/?m=23209&i=688158&p=34</a> : Successful leadership in distributed systems demands a blend of technical expertise and business insight. Leaders must grasp both the intricate technical aspects of the system and the overarching business goals and limitations.</div>
+                     </span>
+                     <br>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="grid">
+            <div class="card">
+               <h2>Technology Skills</h2>
+               <ul>
+                  <li><span class="kpi">Executive Partnership: </span><span class="small"> Partnering with senior leaders to prioritize high-impact use cases, scale what works, measure outcomes, and deliver value through iterative execution. </span></li>
+                  <li><span class="kpi">Engineering Leadership: </span><span class="small"> Building and leading large, distributed engineering and platform organizations (up to ~120 engineers) with strong KPIs, DevSecOps discipline, and delivery rhythms. </span></li>
+                  <li><span class="kpi">Architecture & Innovation: </span><span class="small"> Governing standards, reference architectures, and golden paths while incubating innovation through centers of excellence and communities of practice. </span></li>
+                  <li><span class="kpi">GenAI & Agentic Systems with Self-Criticism: </span> <span class="small">Deliver governed, reusable building blocks (prompt/tooling patterns, MCP Integrations, agent runtimes, evaluation, guardrails) with critical AI models and human oversight in the loop.</span></li>
+                  <li><span class="kpi">Enterprise AI Platform Strategy: </span> <span class="small">Define and execute multi‑year AI platform strategy (LLMs, ML, automation) aligned to business outcomes, governance standards, and operational reliability.</span></li>
+                  <li><span class="kpi">Security, Compliance & Risk Governance: </span> <span class="small">Establish decision rights, model risk controls, policy-as-code enforcement, and embed security, privacy, and compliance into platforms with strong auditability and threat modeling.</span></li>
+               </ul>
+            </div>
+            <div class="card">
+               <h2>What I Build (Platforms & Capabilities)</h2>
+               <ul>
+                  <li>
+                     <span class="kpi">Enterprise Value & Experience: </span>
+                     <span class="small">
+                        <ul>
+                           <li>Faster time-to-value through self-service platforms and automation.</li>
+                           <li>Measurable value realization via adoption, ROI instrumentation, and iterative delivery</li>
+                        </ul>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="kpi">AI Platform Foundations: </span>
+                     <span class="small">
+                        <ul>
+                           <li>Reusable APIs & SDKs for model access and orchestration</li>
+                           <li>Model selection & routing (policy-driven) across providers/models with fallbacks</li>
+                           <li>LLMOps: evaluation, telemetry, regression tests, rollout controls</li>
+                        </ul>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="kpi">Responsible AI & Governance: </span>
+                     <span class="small">
+                        <ul>
+                           <li>Access controls and data entitlement patterns</li>
+                           <li>Risk classification by use case and model behavior</li>
+                           <li>Human-in-the-loop workflows for high-impact decisions</li>
+                           <li>Audit-ready logging and policy enforcement</li>
+                        </ul>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="kpi">Automation & Operational Reliability: </span>
+                     <span class="small">
+                        <ul>
+                           <li>SLO-driven engineering and resilient architecture patterns</li>
+                           <li>Strong observability for always-on platforms</li>
+                           <li>Event-driven integrations, workflow automation, and operational playbooks</li>
+                        </ul>
+                     </span>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="grid">
+            <div class="card">
+               <h2>My Leadership Style</h2>
+               <p class="small">Beyond Include, Inspire, and Motivate, the principles below reflect what I have learned, practiced, and established over years of leadership. </p>
+               <hr class="sep">
+               <ul>
+                  <li>
+                     <div style="color: whitesmoke;">Clarity:</div>
+                     <span class="small">Define outcomes, constraints, and decision rights (de centralization) so teams move fast.</span>
+                  </li>
+                  <br>
+                  <li>
+                     <div style="color: whitesmoke;">Trust:</div>
+                     <span class="small">Gopi is known to empower teams with autonomy, coaching, and accountability.</span>
+                  </li>
+                  <br>
+                  <li>
+                     <div style="color: whitesmoke;">Guardrails:</div>
+                     <span class="small">I push to build platforms that make the safe path the easiest path.</span>
+                  </li>
+                  <br>
+                  <li>
+                     <div style="color: whitesmoke;">Measurement:</div>
+                     <span class="small">I instrument adoption, quality, and risk; improve what matters.</span>
+                  </li>
+                  <br>
+                  <li>
+                     <div style="color: whitesmoke;">People:</div>
+                     <span class="small">I invest time in people, foster their growth, and build strong relationships.</span>
+                  </li>
+               </ul>
+            </div>
+            <div class="card">
+               <h2>Education & Credentials</h2>
+               <p class="small">
+               <ul>
+                  <li>
+                     <div style="color: whitesmoke;">Bachelors (1998-2001)</div>
+                     <span class="small">Computer Applications, Nagarjuna University, Nandigama, India</span>
+                  </li>
+                  <br>
+                  <li>
+                     <div style="color: whitesmoke;">Masters (2001-2003)</div>
+                     <span class="small">Information Systems, Nagarjuna University, Guntur, India</span>
+                  </li>
+                  <br>
+                  <li>
+                     <div style="color: whitesmoke;">Certifications</div>
+                     <span class="small"> • AWS - Solution Architect Certified
+                     <br>
+                     • NetGSC - Java </span>
+                  </li>
+               </ul>
+               </p>
+            </div>
+         </section>
+      </main>
+      <footer>
+         <div class="wrap small">
+            <div style="font-size: smaller;">Thank YOU for reading this far. </div>
+            Frisco, Texas, USA • <a href="mailto:haigopi@gmail.com">haigopi@gmail.com | +1 469 388 2798</a> <br>
+            <span style="font-size: smaller; color: grey;">I developed this code independently, leveraging GitHub Copilot Agent within Visual Studio Code powered by GPT-5.2 to accelerate development and assist with the page layout. — Gopi</span>
+         </div>
+      </footer>
+   </body>
+</html>
