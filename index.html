@@ -21,8 +21,10 @@
          --border-light: #2a3746;
          --success: #48bb78;
          --warning: #ed8936;
+         --gold: #f0c674;
          --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
          --gradient-card: linear-gradient(145deg, #111a25 0%, #0f1822 50%, #131b28 100%);
+         --gradient-founder: linear-gradient(135deg, #1a2f47 0%, #24273f 50%, #1c2440 100%);
          --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
          --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.25);
          --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
@@ -151,6 +153,15 @@
          section {
          padding: 32px 0;
          }
+         .eyebrow {
+         display: inline-block;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         font-size: 12px;
+         font-weight: 700;
+         color: var(--accent);
+         margin-bottom: 10px;
+         }
          .grid {
          display: grid;
          gap: 24px;
@@ -244,6 +255,90 @@
          gap: 8px;
          justify-content: center;
          }
+         /* Founder / ventures section */
+         .founder-section {
+         background: radial-gradient(1000px at 50% 0%, rgba(240, 198, 116, 0.06), transparent 65%);
+         border-top: 1px solid var(--border);
+         border-bottom: 1px solid var(--border);
+         }
+         .founder-intro {
+         max-width: 760px;
+         margin: 0 auto 28px;
+         text-align: center;
+         }
+         .founder-intro h2 {
+         font-size: clamp(24px, 3vw, 34px);
+         }
+         .venture-grid {
+         display: grid;
+         gap: 24px;
+         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+         }
+         .venture-card {
+         background: var(--gradient-founder);
+         border: 1px solid var(--border-light);
+         border-radius: 22px;
+         padding: 26px;
+         position: relative;
+         overflow: hidden;
+         transition: all 0.3s ease;
+         display: flex;
+         flex-direction: column;
+         }
+         .venture-card::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         height: 3px;
+         background: linear-gradient(90deg, var(--gold), var(--accent));
+         }
+         .venture-card:hover {
+         transform: translateY(-5px);
+         box-shadow: var(--shadow-lg);
+         border-color: var(--gold);
+         }
+         .founder-badge {
+         display: inline-flex;
+         align-items: center;
+         gap: 6px;
+         align-self: flex-start;
+         padding: 5px 12px;
+         border-radius: 999px;
+         background: rgba(240, 198, 116, 0.14);
+         border: 1px solid rgba(240, 198, 116, 0.4);
+         color: var(--gold);
+         font-size: 11px;
+         font-weight: 800;
+         text-transform: uppercase;
+         letter-spacing: 0.8px;
+         margin-bottom: 14px;
+         }
+         .venture-icon {
+         font-size: 28px;
+         margin-bottom: 10px;
+         }
+         .venture-name {
+         font-size: 19px;
+         font-weight: 800;
+         color: var(--ink);
+         margin: 0 0 4px;
+         }
+         .venture-desc {
+         color: var(--muted);
+         font-size: 14.5px;
+         line-height: 1.55;
+         flex-grow: 1;
+         margin: 6px 0 18px;
+         }
+         .venture-link {
+         font-weight: 700;
+         font-size: 14px;
+         display: inline-flex;
+         align-items: center;
+         gap: 6px;
+         }
          @media print {
          @page {
          size: A4;
@@ -285,16 +380,16 @@
    <body>
       <header class="hero">
          <div class="wrap">
-            <div class="pill">CIO • CTO • Strategy • Cloud • Data • AI/ML</div>
+            <div class="pill">CIO • CTO • Strategy • Cloud • Data • AI/ML • Founder</div>
             <h1 class="title">Gopi K Kancharla</h1>
-            <p class="subtitle">Technology Executive | Head of Technology | Toyota | Ex‑Capital One </p>
+            <p class="subtitle">Technology Executive | Head of Technology | Toyota | Ex‑Capital One | Founder, Building Ventures From Scratch</p>
             <div class="cta-row">
                <button class="btn" onclick="alert('Email: haigopi@gmail.com')">✉️ Email</button>
                <button class="btn" onclick="alert('Phone: +1 469 388 2798')">☎️ Phone</button>
                <a class="btn secondary" href="https://www.linkedin.com/in/haigopi" target="_blank" rel="noopener">LinkedIn</a>
                <a class="btn secondary" href="https://medium.com/thinkspecial" target="_blank" rel="noopener">ThinkSpecial Articles</a>
                <a class="btn secondary" href="https://scholar.google.com/citations?user=cpw488YAAAAJ" target="_blank" rel="noopener">Patents & Citations</a>
-               <a class="btn" href="Gopi_Resume.pdf" download>Download PDF</a>
+               <a class="btn secondary" href="#ventures">Founder Journey ↓</a>
             </div>
          </div>
       </header>
@@ -304,7 +399,7 @@
                <h2>Executive Summary</h2>
                <p class="small">
                   Technology executive with deep experience building and operating enterprise platforms across cloud, data, security, and AI-enabled decisioning. Known for pragmatic execution and measurable outcomes: modernizing legacy stacks, improving
-                  resiliency and governance, and scaling platforms with strong DevSecOps.
+                  resiliency and governance, and scaling platforms with strong DevSecOps. Alongside enterprise leadership, I found equal energy in growing my own businesses from scratch — from a single idea to a live product serving real customers.
                </p>
                <hr class="sep">
                <div class="badges" aria-label="Executive Summary focus areas" style="justify-content: center; margin-top: 12px">
@@ -322,60 +417,38 @@
                </div>
             </div>
          </section>
-         <section>
-            <div class="card">
-               <h2>Resumes &amp; Links</h2>
-               <p class="small">All resume formats and public profiles in one place — pick the version that best fits the role you're reviewing.</p>
-               <hr class="sep">
-               <h3>Resumes</h3>
-               <div class="grid" style="gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 8px;">
-                  <div>
-                     <div class="kpi" style="font-size: 15px;">Standard Resume</div>
-                     <p class="small">General-purpose resume covering full career history and highlights.</p>
-                     <a class="btn secondary" href="Gopi_Resume.pdf" download>⬇ Download PDF</a>
-                  </div>
-                  <div>
-                     <div class="kpi" style="font-size: 15px;">Detailed Resume</div>
-                     <p class="small">Expanded version with additional role-by-role detail.</p>
-                     <a class="btn secondary" href="Gopi_K_Kancharla_Resume.pdf" download>⬇ Download PDF</a>
-                  </div>
-                  <div>
-                     <div class="kpi" style="font-size: 15px;">Professional Summary</div>
-                     <p class="small">Condensed one-pager for quick executive review.</p>
-                     <a class="btn secondary" href="Gopi_Resume_Professional.pdf" download>⬇ Download PDF</a>
-                  </div>
-                  <div>
-                     <div class="kpi" style="font-size: 15px;">AI Architecture Profile</div>
-                     <p class="small">Focused on AI/ML platform strategy, architecture, and governance experience.</p>
-                     <a class="btn secondary" href="Gopi%20K%20Kancharla%20%E2%80%94%20AI%20Architecture%20Profile.pdf" download>⬇ Download PDF</a>
-                  </div>
-                  <div>
-                     <div class="kpi" style="font-size: 15px;">Full Profile (this page)</div>
-                     <p class="small">PDF export of this profile page, including highlights, skills, and leadership style.</p>
-                     <a class="btn secondary" href="gopi_profile.pdf" download>⬇ Download PDF</a>
-                  </div>
+
+         <section class="founder-section" id="ventures">
+            <div class="founder-intro">
+               <div class="eyebrow">Entrepreneurship</div>
+               <h2>Growing Businesses From Scratch</h2>
+               <p class="small">Beyond the enterprise, I've founded and personally built these ventures from the ground up — writing the first line of code, shaping the product, and taking them to real users.</p>
+            </div>
+            <div class="venture-grid">
+               <div class="venture-card">
+                  <div class="venture-icon">🏠</div>
+                  <span class="founder-badge">★ Founder</span>
+                  <div class="venture-name">RentMitra Inc</div>
+                  <p class="venture-desc">AI-powered early-stage startup for a rental marketplace platform connecting property owners and tenants nationwide, producing legal agreement solutions.</p>
+                  <a class="venture-link" href="https://rentmitra.lovable.app/" target="_blank" rel="noopener">Visit rentmitra.lovable.app →</a>
                </div>
-               <hr class="sep">
-               <h3>Alternate Profile Pages</h3>
-               <div class="badges" aria-label="Alternate profile pages" style="justify-content: flex-start;">
-                  <a class="pill" href="gopi_cto_portfolio.html" target="_blank" rel="noopener">CTO Portfolio</a>
-                  <a class="pill" href="gopi_architecture.html" target="_blank" rel="noopener">AI Architecture Profile</a>
-                  <a class="pill" href="gopi_profile_portfolio.html" target="_blank" rel="noopener">CIO | CTO Profile</a>
-                  <a class="pill" href="gopi_resume.html" target="_blank" rel="noopener">Resume Page</a>
+               <div class="venture-card">
+                  <div class="venture-icon">🍲</div>
+                  <span class="founder-badge">★ Founder</span>
+                  <div class="venture-name">GingerKnife Inc</div>
+                  <p class="venture-desc">Leading HomeChefs marketplace with AI-backed technology, transforming healthy homemade food and fighting against unhealthy eating habits.</p>
+                  <a class="venture-link" href="https://VantaShala.com/" target="_blank" rel="noopener">Visit VantaShala.com →</a>
                </div>
-               <hr class="sep">
-               <h3>Professional Links</h3>
-               <div class="badges" aria-label="Professional links" style="justify-content: flex-start;">
-                  <a class="pill" href="https://www.linkedin.com/in/haigopi" target="_blank" rel="noopener">LinkedIn</a>
-                  <a class="pill" href="https://medium.com/thinkspecial" target="_blank" rel="noopener">ThinkSpecial Articles</a>
-                  <a class="pill" href="https://scholar.google.com/citations?user=cpw488YAAAAJ" target="_blank" rel="noopener">Patents & Citations</a>
-                  <a class="pill" href="https://rentmitra.lovable.app/" target="_blank" rel="noopener">RentMitra Inc</a>
-                  <a class="pill" href="https://VantaShala.com/" target="_blank" rel="noopener">GingerKnife (VantaShala)</a>
-                  <a class="pill" href="https://allibilli.com/" target="_blank" rel="noopener">AlliBilli</a>
-                  <a class="pill" href="mailto:haigopi@gmail.com">Email</a>
+               <div class="venture-card">
+                  <div class="venture-icon">📰</div>
+                  <span class="founder-badge">★ Founder</span>
+                  <div class="venture-name">AlliBilli.com</div>
+                  <p class="venture-desc">Founder of an innovative all-in-one news platform helping elderly people stay informed and connected.</p>
+                  <a class="venture-link" href="https://allibilli.com/" target="_blank" rel="noopener">Visit AlliBilli.com →</a>
                </div>
             </div>
          </section>
+
          <section class="grid">
             <div class="card">
                <h2>Career Highlights (Selected)</h2>
@@ -445,26 +518,10 @@
                </ul>
             </div>
             <div class="card">
-               <h2>Board Member and Articles</h2>
+               <h2>Patents & Thought Leadership</h2>
                <ul style="margin-left: 0;">
                   <li>
                      <span class="kpi">Own 28 Patents out of 37 Issued as a Primary Inventor (<a href="https://scholar.google.com/citations?user=cpw488YAAAAJ" target="_blank" rel="noopener">Google Scholar</a>)</span>
-                  </li>
-                  <br>
-                  <li>
-                     <span class="kpi">Advisory Board Member/Founder</span>
-                     <br>
-                     <span class="small" style="color: var(--accent); font-weight: 500;">
-                        <br>
-                        <div style="color: whitesmoke;">-> RentMitra Inc - <a href="https://rentmitra.lovable.app/" target="_blank" rel="noopener">https://rentmitra.lovable.app/</a></div>
-                        <div class="small">AI Powered Early Stage Startup for rental marketplace platform connecting property owners and tenants nationwide, producing legal agreement solutions.</div>
-                        <br>
-                        <div style="color: whitesmoke;">-> GingerKnife Inc - <a href="https://VantaShala.com/" target="_blank" rel="noopener">https://VantaShala.com/</a></div>
-                        <div class="small">Leading HomeChefs MarketPlace AI backed technology, transforming healthy homemade food, fighting against unhealthy eating habits.</div>
-                        <br>
-                        <div style="color: whitesmoke;">-> AlliBilli.com - <a href="https://allibilli.com/" target="_blank" rel="noopener">https://allibilli.com/</a></div>
-                        <div class="small">Founder and innovative all in one news platform helping elderly people.</div>
-                     </span>
                   </li>
                   <br>
                   <li>
