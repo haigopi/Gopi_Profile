@@ -1,0 +1,147 @@
+GOPI K KANCHARLA
+Enterprise AI Executive | Applied AI | Agentic Platforms | Responsible AI | Financial Services
+Frisco, Texas, USA | +1 469 388 2798 | haigopi@gmail.com
+LinkedIn: https://www.linkedin.com/in/haigopi
+Google Scholar: https://scholar.google.com/citations?user=cpw488YAAAAJ
+
+TARGET ROLE
+Head of Applied AI & Agent Factory - Citi
+
+EXECUTIVE PROFILE
+
+Technology and AI executive with 20+ years of experience turning complex platform strategies into production capabilities, measurable business outcomes, and scalable engineering operating models. Combines deep financial-services fluency with current expertise in GenAI, agentic systems, RAG, model and agent lifecycle governance, AI evaluation, cloud-native platforms, distributed systems, and responsible AI.
+
+Builder-operator who has led globally distributed engineering organizations of up to 120 people, developed managers and senior technical leaders, and delivered enterprise platforms in banking, commercial lending, consumer lending, Auto Finance, marketing technology, analytics, capital markets, and cloud infrastructure. Trusted partner to CIOs, SVPs, product executives, business leaders, cybersecurity, risk, compliance, data, and operations teams.
+
+Known for moving from strategy to adoption: identifying high-value business problems, redesigning workflows, building reusable platform foundations, embedding controls, measuring outcomes, and feeding proven patterns back into shared capabilities. Delivered a new $30B commercial lending platform, helped drive $240M+ in revenue impact through marketing technology transformation, tripled release velocity, and led $11M cloud programs. Primary inventor on 28 issued patents from 37 filings in distributed systems, cloud storage, resiliency, automation, and related technologies.
+
+APPLIED AI AND AGENT FACTORY LEADERSHIP VALUE
+
+- Agent Factory operating model: Define repeatable paths for agent discovery, design, build, evaluation, certification, release, observability, versioning, and lifecycle management.
+- Business-embedded delivery: Partner with process owners, product leaders, and control functions to redesign high-value workflows around AI, automation, human oversight, and measurable outcomes.
+- Delivery-to-platform feedback loop: Convert successful business implementations into reusable APIs, SDKs, agent patterns, reference architectures, golden paths, and horizontal platform capabilities.
+- Enterprise AI governance: Embed identity, access controls, data entitlements, model-risk classification, evaluation, policy enforcement, audit-ready telemetry, and human-in-the-loop controls.
+- Adoption and value realization: Prioritize initiatives by business case and risk; instrument usage, quality, reliability, cost, and ROI; scale what works and stop work that does not create value.
+- Financial-services execution: Build secure, resilient AI and decisioning capabilities within highly regulated banking and lending environments.
+- Global organization leadership: Build and lead distributed engineering and platform organizations of up to 120 people with clear decision rights, delivery rhythms, and outcome accountability.
+- Executive influence: Translate AI architecture and delivery decisions into business value, operational risk, customer impact, regulatory posture, and investment priorities.
+
+CORE EXPERTISE
+
+Applied AI Strategy | Agent Factory Operating Models | Business-Embedded AI Delivery
+Agentic Systems | LLM Applications | RAG | Agent Orchestration | MCP Integrations
+OpenAI | Claude | Gemini | LLaMA | LangChain | LangGraph
+Agent and Model Evaluation | Certification Patterns | Regression Testing | Safety Testing
+Agent Lifecycle Management | Versioning | Release Controls | Observability | Decommissioning
+Enterprise Agent and Model Catalogs | Reusable APIs and SDKs | Golden Paths
+Prompt, Tool, and Agent Governance | Model Selection and Routing | Provider Fallbacks
+MLOps and LLMOps | Model Registry | Lineage | Reproducibility | Telemetry
+Responsible AI | Model Risk | Human-in-the-Loop | Auditability | Policy Guardrails
+AI Adoption and ROI | Process Redesign | Productization | Portfolio Prioritization
+Financial Services | Commercial Lending | Consumer Lending | Auto Finance | Decisioning
+Cloud-Native Platforms | Distributed Systems | Data Platforms | API Architecture
+Global Engineering Leadership | Managers of Managers | Executive Stakeholder Influence
+Cybersecurity | Risk and Compliance | Privacy | DevSecOps | Operational Resilience
+
+SELECTED AI PLATFORM CAPABILITIES
+
+- Industrialized delivery: Standardized discovery, architecture, build, test, evaluation, approval, deployment, monitoring, and continuous-improvement practices for governed AI solutions.
+- Agent foundations: Reusable agent runtimes, prompt and tool patterns, orchestration components, APIs, SDKs, memory and retrieval patterns, and reference implementations.
+- Evaluation and certification: Quality, safety, grounding, latency, cost, robustness, regression, and policy evaluations tied to use-case risk and production-release decisions.
+- Catalog and lifecycle: Curated metadata for models, agents, tools, owners, approved use cases, quality, cost, risk, versions, dependencies, and operational status.
+- Responsible AI controls: Role-based access, data entitlements, privacy enforcement, risk classification, human approvals, audit logs, monitoring, policy-as-code, and escalation paths.
+- Adoption scorecards: Usage, active users, process penetration, task completion, cycle-time reduction, quality, cost, incidents, business value, and realized ROI.
+- Productization loop: Identify repeated business solutions, extract reusable components, and graduate proven implementations into shared enterprise capabilities.
+
+PROFESSIONAL EXPERIENCE
+
+TOYOTA FINANCIAL SERVICES - Plano, Texas
+Head of Technology - BCL (Banking and Commercial Lending) & Consumer Lending | March 2025 - Present
+
+- Lead technology strategy, architecture, engineering execution, and modernization for banking, commercial-lending, and consumer-lending platforms in a regulated financial-services environment.
+- Translate business priorities into a two-year platform and AI roadmap, sequenced investments, delivery plans, measurable outcomes, and clear ownership across product, engineering, architecture, data, security, risk, and operations.
+- Directed delivery of a new, scalable $30B commercial loan origination platform supporting critical dealer and commercial-finance journeys.
+- Rebuilt a core commercial loan origination system in under six months by establishing focused teams, rapid feedback loops, clear decision rights, and disciplined delivery.
+- Designed a configuration-driven platform that reduced selected change cycles from one month to approximately five minutes, transforming the operating model for product and process changes.
+- Built AI/ML-enabled credit-risk and customer-experience capabilities with governed model access, monitoring, auditability, human oversight, and controls for high-impact decisions.
+- Advanced enterprise GenAI and agentic patterns spanning model access, RAG, orchestration, evaluation, guardrails, telemetry, and lifecycle governance.
+- Tripled release velocity through DevSecOps, API automation, reusable platform capabilities, automated controls, and streamlined delivery practices across multi-cloud infrastructure.
+- Established SLOs, observability, platform guardrails, operational playbooks, and production accountability for mission-critical applications.
+- Partner with business leaders and control functions to prioritize high-value use cases, resolve delivery and risk trade-offs, and connect platform investment to measurable customer and business outcomes.
+- Lead globally distributed engineering and platform teams, coaching leaders and engineers while creating transparent governance and shared accountability.
+
+CAPITAL ONE - Plano, Texas | February 2016 - March 2025
+Director, Software Engineering - Marketing Technology and Analytics, Decisioning, AutoFinance | December 2021 - March 2025
+Progressive leadership roles: Senior Manager, Software Engineering | March 2019 - November 2021; Manager, Software Engineering | March 2017 - February 2019; Master Software Engineer | February 2016 - February 2017
+
+- Progressed through four engineering leadership levels over nine years, expanding responsibility across marketing technology, analytics, AI/ML, consumer-lending decisioning, pricing, and Auto Finance platforms.
+- Led engineering organizations delivering regulated, high-scale customer and lending capabilities, with accountability for strategy, architecture, execution, governance, and operational maturity.
+- Defined and executed a marketing-technology and analytics platform strategy that reduced Adobe vendor lock-in, strengthened data governance, improved control of customer data, and delivered $240M+ in revenue impact.
+- Built AI/ML-driven marketing and analytics capabilities supporting millions of customer interactions, real-time personalization, targeting, experimentation, and measurable engagement outcomes.
+- Delivered consumer loan origination decisioning systems and multi-lending and pricing platforms connecting business policy, data, models, APIs, and digital experiences.
+- Established reusable platform services, API patterns, cloud foundations, architecture standards, KPIs, SLOs, and cross-functional delivery rhythms.
+- Partnered with product, marketing, business, data science, architecture, cybersecurity, risk, and compliance leaders to identify opportunities, prioritize investments, and translate technical choices into business and control outcomes.
+- Advanced cloud adoption, automated testing, CI/CD, observability, and DevSecOps practices to improve speed, reliability, auditability, and delivery consistency.
+- Managed complex portfolios, budgets, resources, vendors, dependencies, technical risks, and stakeholder commitments.
+- Developed engineering managers and technical leaders while building high-trust, outcome-focused teams.
+
+DELL EMC / EMC CORPORATION - New Jersey and Texas | May 2011 - January 2016
+Senior Cloud Software Architect / Engineering Leader | July 2013 - January 2016
+Earlier role: Cloud Engineer Specialist | May 2011 - July 2013
+
+- Owned architecture and engineering leadership for ECS, ViPR, and UIM enterprise cloud, data, and storage platforms adopted by global customers.
+- Defined hybrid-cloud architecture and a two-year platform roadmap focused on scalability, resilience, automation, extensibility, and long-term product evolution.
+- Designed distributed, fault-tolerant, highly available, and disaster-recovery-ready systems for large-scale enterprise data and storage workloads.
+- Led $11M multi-year programs, coordinating architecture, engineering execution, product priorities, scope, schedules, resources, and customer commitments.
+- Created reusable APIs, orchestration capabilities, automation, architecture patterns, and platform standards for distributed cloud systems.
+- Built and worked with globally distributed teams across product, architecture, engineering, quality, and infrastructure functions.
+- Served as primary inventor on patented innovations spanning distributed systems, cloud storage, automation, resiliency, and user-experience technologies.
+
+IPC SYSTEMS INC. - Fairfield, Connecticut | October 2009 - May 2011
+Frontend Engineering Leader | May 2010 - May 2011
+Earlier role: Principal UI Engineer | October 2009 - May 2010
+
+- Led a globally distributed team of 60+ engineers across regions and time zones, supporting round-the-clock development for capital-markets technology.
+- Delivered real-time, low-latency trading platforms with demanding availability, performance, and operational requirements.
+- Established enterprise coding, design, and architecture standards while coordinating onshore, offshore, product, and operations teams.
+
+EARLIER EXPERIENCE
+
+ADESA INC. - Carmel, Indiana | January 2008 - May 2009
+Lead Software Engineer - Java/J2EE/AJAX/Web 2.0
+
+- Led delivery of transaction-oriented online auction, inventory, integration, and live auction-floor applications.
+- Integrated vehicle inventory from 12 vendors through file- and Salesforce-based workflows.
+
+IBM - Bengaluru, India and Bari, Italy | August 2004 - January 2008
+Technical Lead | December 2006 - January 2008
+Progressive earlier roles: Systems Engineer and Senior Systems Engineer
+
+- Built and led an offshore engineering team supporting enterprise application delivery across India and Italy.
+- Delivered enterprise platforms using Java/J2EE, web services, reporting, CRM, database, and integration technologies.
+
+ENTREPRENEURIAL LEADERSHIP - FOUNDER AND 0-TO-1 BUILDING
+
+Founded and built four ventures from concept to production, personally owning product strategy, architecture, engineering, launch, adoption, and platform evolution.
+
+- RunningTicker.com: Conceived and scaled a financial analytics platform from zero to a successful exit.
+- RentMitra Inc.: Built an AI-powered rental marketplace with automated legal-agreement workflows. Platform: https://rentmitra.lovable.app
+- GingerKnife Inc. / VantaShala.com: Built and led an AI-backed HomeChefs marketplace. Platform: https://VantaShala.com
+- AlliBilli.com: Designed and launched an all-in-one news platform tailored to elderly users. Platform: https://allibilli.com
+
+PATENTS, PUBLICATIONS, AND INDUSTRY LEADERSHIP
+
+- Primary inventor on 28 issued patents from 37 filings in distributed systems, cloud storage, resiliency, automation, and related technologies.
+- Founder and author of ThinkSpecial, with 100+ articles on AI platforms, engineering, distributed systems, cloud architecture, automation, and leadership.
+- Speaker at Cloud Expo International, DZone Live, and enterprise executive forums on distributed systems, cloud architecture, and engineering leadership.
+- Advisor to early-stage AI ventures and mentor to technology, engineering, and STEM leaders.
+
+EDUCATION AND CERTIFICATIONS
+
+Master of Science, Information Systems - Nagarjuna University, Guntur, India | 2003
+Bachelor of Computer Applications - Nagarjuna University, India | 2001
+AWS Certified Solutions Architect | Java Certification | SAFe Certification
+
+LOCATION
+
+Based in Frisco, Texas
