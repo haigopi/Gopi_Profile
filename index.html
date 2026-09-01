@@ -25,6 +25,7 @@
          --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
          --gradient-card: linear-gradient(145deg, #111a25 0%, #0f1822 50%, #131b28 100%);
          --gradient-founder: linear-gradient(135deg, #1a2f47 0%, #24273f 50%, #1c2440 100%);
+         --gradient-page: linear-gradient(135deg, #101d2c 0%, #16182a 50%, #121729 100%);
          --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
          --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.25);
          --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
@@ -42,7 +43,9 @@
          Roboto,
          "Helvetica Neue",
          Arial;
-         background: linear-gradient(180deg, #0b1015, #0e1822 45%, #0b1015);
+         background: var(--gradient-page);
+         background-repeat: no-repeat;
+         min-height: 100vh;
          color: var(--ink);
          line-height: 1.6;
          overflow-x: hidden;
@@ -55,9 +58,21 @@
          right: 0;
          bottom: 0;
          background:
-         radial-gradient(600px at 50% 200px, rgba(99, 179, 237, 0.06), transparent 52%), radial-gradient(800px at 12% 18%, rgba(118, 75, 162, 0.06), transparent 60%), radial-gradient(900px at 88% 28%, rgba(99, 179, 237, 0.04), transparent 62%);
+         radial-gradient(900px at 50% 0%, rgba(240, 198, 116, 0.07), transparent 60%), radial-gradient(800px at 12% 18%, rgba(118, 75, 162, 0.10), transparent 62%), radial-gradient(900px at 88% 30%, rgba(99, 179, 237, 0.09), transparent 64%);
          pointer-events: none;
          z-index: -1;
+         }
+         /* Top accent rule, mirroring the venture cards */
+         body::after {
+         content: "";
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         height: 3px;
+         background: linear-gradient(90deg, var(--gold), var(--accent));
+         pointer-events: none;
+         z-index: 10;
          }
          a {
          color: var(--accent);
@@ -349,7 +364,10 @@
          print-color-adjust: exact;
          }
          body {
-         background: linear-gradient(180deg, #0b1015, #0e1822 45%, #0b1015) !important;
+         background: var(--gradient-page) !important;
+         }
+         body::after {
+         display: none;
          }
          .card,
          .btn {
@@ -389,7 +407,7 @@
                <a class="btn secondary" href="https://www.linkedin.com/in/haigopi" target="_blank" rel="noopener">LinkedIn</a>
                <a class="btn secondary" href="https://medium.com/thinkspecial" target="_blank" rel="noopener">ThinkSpecial Articles</a>
                <a class="btn secondary" href="https://scholar.google.com/citations?user=cpw488YAAAAJ" target="_blank" rel="noopener">Patents & Citations</a>
-               <a class="btn secondary" href="resumes/">Resumes & Downloads</a>
+               <a class="btn" href="Gopi_Kancharla_Resume.pdf" download="Gopi_Kancharla_Resume.pdf">📄 Download Resume</a>
                <a class="btn secondary" href="#ventures">Founder Journey ↓</a>
             </div>
          </div>
@@ -415,37 +433,6 @@
                   <span class="pill">Security & Risk</span>
                   <span class="pill">Advanced Automation</span>
                   <span class="pill">Test Automation</span>
-               </div>
-            </div>
-         </section>
-
-         <section class="founder-section" id="ventures">
-            <div class="founder-intro">
-               <div class="eyebrow">Entrepreneurship</div>
-               <h2>Growing Businesses From Scratch</h2>
-               <p class="small">Beyond the enterprise, I've founded and personally built these ventures from the ground up — writing the first line of code, shaping the product, and taking them to real users.</p>
-            </div>
-            <div class="venture-grid">
-               <div class="venture-card">
-                  <div class="venture-icon">🏠</div>
-                  <span class="founder-badge">★ Founder</span>
-                  <div class="venture-name">RentMitra Inc</div>
-                  <p class="venture-desc">AI-powered early-stage startup for a rental marketplace platform connecting property owners and tenants nationwide, producing legal agreement solutions.</p>
-                  <a class="venture-link" href="https://rentmitra.lovable.app/" target="_blank" rel="noopener">Visit rentmitra.lovable.app →</a>
-               </div>
-               <div class="venture-card">
-                  <div class="venture-icon">🍲</div>
-                  <span class="founder-badge">★ Founder</span>
-                  <div class="venture-name">GingerKnife Inc</div>
-                  <p class="venture-desc">Leading HomeChefs marketplace with AI-backed technology, transforming healthy homemade food and fighting against unhealthy eating habits.</p>
-                  <a class="venture-link" href="https://VantaShala.com/" target="_blank" rel="noopener">Visit VantaShala.com →</a>
-               </div>
-               <div class="venture-card">
-                  <div class="venture-icon">📰</div>
-                  <span class="founder-badge">★ Founder</span>
-                  <div class="venture-name">AlliBilli.com</div>
-                  <p class="venture-desc">Founder of an innovative all-in-one news platform helping elderly people stay informed and connected.</p>
-                  <a class="venture-link" href="https://allibilli.com/" target="_blank" rel="noopener">Visit AlliBilli.com →</a>
                </div>
             </div>
          </section>
@@ -545,6 +532,37 @@
                      <br>
                   </li>
                </ul>
+            </div>
+         </section>
+
+         <section class="founder-section" id="ventures">
+            <div class="founder-intro">
+               <div class="eyebrow">Entrepreneurship</div>
+               <h2>Growing Businesses From Scratch</h2>
+               <p class="small">Beyond the enterprise, I've founded and personally built these ventures from the ground up — writing the first line of code, shaping the product, and taking them to real users.</p>
+            </div>
+            <div class="venture-grid">
+               <div class="venture-card">
+                  <div class="venture-icon">🏠</div>
+                  <span class="founder-badge">★ Founder</span>
+                  <div class="venture-name">RentMitra Inc</div>
+                  <p class="venture-desc">AI-powered early-stage startup for a rental marketplace platform connecting property owners and tenants nationwide, producing legal agreement solutions.</p>
+                  <a class="venture-link" href="https://rentmitra.lovable.app/" target="_blank" rel="noopener">Visit rentmitra.lovable.app →</a>
+               </div>
+               <div class="venture-card">
+                  <div class="venture-icon">🍲</div>
+                  <span class="founder-badge">★ Founder</span>
+                  <div class="venture-name">GingerKnife Inc</div>
+                  <p class="venture-desc">Leading HomeChefs marketplace with AI-backed technology, transforming healthy homemade food and fighting against unhealthy eating habits.</p>
+                  <a class="venture-link" href="https://VantaShala.com/" target="_blank" rel="noopener">Visit VantaShala.com →</a>
+               </div>
+               <div class="venture-card">
+                  <div class="venture-icon">📰</div>
+                  <span class="founder-badge">★ Founder</span>
+                  <div class="venture-name">AlliBilli.com</div>
+                  <p class="venture-desc">Founder of an innovative all-in-one news platform helping elderly people stay informed and connected.</p>
+                  <a class="venture-link" href="https://allibilli.com/" target="_blank" rel="noopener">Visit AlliBilli.com →</a>
+               </div>
             </div>
          </section>
          <section class="grid">
