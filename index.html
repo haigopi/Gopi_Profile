@@ -87,6 +87,48 @@
          text-align: center;
          position: relative;
          }
+         .avatar {
+         width: 132px;
+         height: 132px;
+         margin: 0 auto 22px;
+         padding: 3px;
+         border-radius: 50%;
+         background: linear-gradient(135deg, var(--gold), var(--accent));
+         box-shadow: var(--shadow-md);
+         }
+         .avatar-inner {
+         display: grid;
+         width: 100%;
+         height: 100%;
+         place-items: center;
+         overflow: hidden;
+         border-radius: 50%;
+         background: var(--gradient-founder);
+         }
+         .avatar-inner > * {
+         grid-area: 1 / 1;
+         }
+         .avatar-initials {
+         font-size: 42px;
+         font-weight: 800;
+         letter-spacing: 1px;
+         color: var(--ink);
+         }
+         .avatar img {
+         display: block;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         }
+         @media (max-width: 600px) {
+         .avatar {
+         width: 108px;
+         height: 108px;
+         }
+         .avatar-initials {
+         font-size: 34px;
+         }
+         }
          header.hero::before {
          content: "";
          position: absolute;
@@ -398,6 +440,12 @@
    <body>
       <header class="hero">
          <div class="wrap">
+            <div class="avatar">
+               <div class="avatar-inner">
+                  <span class="avatar-initials" aria-hidden="true">GK</span>
+                  <img src="profile.jpg" alt="Gopi K Kancharla" onerror="this.remove()">
+               </div>
+            </div>
             <div class="pill">CIO • CTO • Strategy • Cloud • Data • AI/ML • Founder</div>
             <h1 class="title">Gopi K Kancharla</h1>
             <p class="subtitle">Technology Executive | Head of Technology | Toyota | Ex‑Capital One | Founder, Building Ventures From Scratch</p>
@@ -682,9 +730,7 @@
       </main>
       <footer>
          <div class="wrap small">
-            <div style="font-size: smaller;">Thank YOU for reading this far. </div>
-            Frisco, Texas, USA • <a href="mailto:haigopi@gmail.com">haigopi@gmail.com | +1 469 388 2798</a> <br>
-            <span style="font-size: smaller; color: grey;">I developed this code independently, leveraging GitHub Copilot Agent within Visual Studio Code powered by GPT-5.2 to accelerate development and assist with the page layout. — Gopi</span>
+            Frisco, Texas, USA • <a href="mailto:haigopi@gmail.com">haigopi@gmail.com | +1 469 388 2798</a>
          </div>
       </footer>
    </body>
