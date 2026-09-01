@@ -1,153 +1,132 @@
 GOPI K KANCHARLA
-Senior Technology Executive | Enterprise Platforms | Financial Services | Cloud | Data | AI
-Frisco, Texas, USA | +1 469 388 2798 | haigopi@gmail.com
-LinkedIn: https://www.linkedin.com/in/haigopi
+Frisco, Texas, USA | Open to Relocation | +1 469 388 2798 | haigopi@gmail.com
+GopiKancharla.com | LinkedIn: https://www.linkedin.com/in/haigopi
 Google Scholar: https://scholar.google.com/citations?user=cpw488YAAAAJ
 
-TARGET ROLE
-Senior Vice President, Platform and Product Development - Commercial and Money Movement Solutions
+TECHNOLOGY EXECUTIVE | ENGINEERING AND PLATFORM LEADERSHIP
+Platform Engineering | Cloud Infrastructure | Low-Latency Distributed Systems | Data Platforms | Cybersecurity and Technology Risk
 
-EXECUTIVE PROFILE
 
-Technology executive with 20+ years of experience building and operating enterprise platforms across financial services, automotive finance, capital markets, cloud infrastructure, data, and AI/ML. Translates business strategy into multi-year technology roadmaps, scalable platform architectures, and disciplined execution. Has built and led globally distributed engineering organizations of up to 120 people and delivered multi-billion-dollar lending platforms, real-time transaction-intensive systems, enterprise cloud products, and AI-enabled decisioning capabilities.
+PROFESSIONAL SUMMARY
 
-Deep experience in distributed systems, API-driven platforms, cloud-native architecture, DevSecOps, data governance, operational resilience, and secure delivery in regulated environments. Trusted partner to CIOs, SVPs, product leaders, cybersecurity, risk, compliance, and operations teams. Primary inventor on 28 issued patents from 37 filings spanning distributed systems, cloud storage, resiliency, and automation.
+Technology executive with 20+ years in software engineering, platform engineering, cloud infrastructure, and large-scale distributed systems, including 7+ years leading global engineering organizations as a manager of managers and executive. Player-coach leader who pairs Principal Engineer architectural depth with the operational rigor required to run mission-critical financial systems where uptime, latency, and resilience are paramount.
 
-EXECUTIVE LEADERSHIP IMPACT
+Proven in highly regulated, mission-critical environments across financial services, commercial and consumer lending, and capital markets, including next-generation trading platforms built for real-time market data and low-latency execution. Designs, builds, and operates high-throughput, low-latency distributed systems with stringent availability, scalability, security, and operational resilience requirements, backed by 28 issued patents as primary inventor in distributed systems, cloud storage, resiliency, and automation.
 
-- Enterprise platform strategy: Defined multi-year platform, cloud, data, and AI roadmaps aligned with business growth, risk, customer experience, and modernization priorities.
-- Regulated financial technology: Led commercial lending, consumer lending decisioning, pricing, marketing technology, and analytics platforms within highly governed financial-services environments.
-- Global engineering leadership: Built and led distributed organizations of up to 120 engineers; developed leaders, established decision rights, and created high-accountability operating rhythms.
-- Platform modernization: Delivered a new $30B commercial loan origination platform and rebuilt a core origination system in under six months.
-- Business value: Modernized Capital One's marketing technology ecosystem, reduced vendor lock-in, strengthened data governance, and contributed $240M+ in revenue impact.
-- Engineering productivity: Tripled release velocity through end-to-end DevSecOps, API automation, reusable architecture patterns, and streamlined delivery practices.
-- Always-on architecture: Designed fault-tolerant, highly available, disaster-recovery-ready platforms for cloud storage, capital markets, and financial applications.
-- AI at scale: Built governed AI/ML capabilities for credit risk, customer experience, marketing, automation, and intelligent decisioning with monitoring and human oversight.
+Deep expertise in modern cloud and platform engineering across multi-cloud environments (AWS, Azure, GCP), Infrastructure-as-Code, Kubernetes and container deployment, CI/CD automation, observability platforms, and cloud-native architecture. Strong command of modern data ecosystems spanning data lakes, lakehouses, real-time streaming, data pipelines, analytics platforms, and MLOps infrastructure.
 
-CORE EXPERTISE
+Institutionalizes security-by-design across the software development lifecycle, with accountability for security architecture, threat modeling, vulnerability management, identity and access controls, regulatory compliance, technology governance, and operational risk frameworks. Recognized for translating complex technical, operational, and security risk into clear business outcomes and strategic recommendations for senior stakeholders.
 
-Enterprise Platform Strategy | Product and Platform Development | Financial Services Technology
-Commercial and Consumer Lending | Transaction-Intensive Systems | Distributed Systems
-API-Driven Platforms | Microservices | Event-Driven Integration | Cloud-Native Architecture
-Enterprise Architecture | Platform Modernization | Data Platforms and Governance
-AI/ML Platforms | GenAI and Agentic Systems | MLOps and LLMOps | Responsible AI
-DevSecOps | CI/CD | SRE and SLOs | Operational Resilience | High Availability and DR
-Cybersecurity, Risk and Compliance | Auditability | Policy Guardrails | Threat Modeling
-Global Engineering Leadership | Executive Stakeholder Influence | Product Partnership
-Portfolio Prioritization | Budget and Vendor Management | Agile and SAFe Delivery
+
+CORE COMPETENCIES
+
+Technology Strategy and Platform Leadership | Core Technology Platforms | Platform Engineering | Engineering Standards and Architectural Governance | Developer Productivity and Developer Tooling | Technology Roadmap and Portfolio Planning
+
+Cloud and Infrastructure: Multi-Cloud (AWS, Azure, GCP) | Cloud-Native Architecture | Infrastructure-as-Code (Terraform) | Kubernetes and Containers | CI/CD Automation | DevSecOps | Site Reliability Engineering | Observability and Telemetry | SLOs and Error Budgets | High Availability | Disaster Recovery | Operational Resilience
+
+Distributed Systems: High-Throughput and Low-Latency Systems | Real-Time Data and Event-Driven Architecture | Microservices and API Platforms | Fault Tolerance | Horizontal Scalability | Capacity and Performance Engineering | Incident Management and Production Accountability
+
+Data Platforms: Data Lakes and Lakehouses | Real-Time Streaming (Kafka) | Data Pipelines | Analytics Platforms | Data Governance and Lineage | MLOps and LLMOps Infrastructure | Model Governance | AI and GenAI Platform Enablement
+
+Cybersecurity and Risk: Security-by-Design | Secure SDLC | Security Architecture | Threat Modeling | Vulnerability Management | Identity and Access Management | Policy-as-Code | Regulatory Compliance | Technology Governance | Operational Risk Frameworks | Audit Readiness
+
+Leadership: Global Engineering Organizations | Manager of Managers | Talent Acquisition and Development | Organizational Transformation | Executive Communication and Presence | Senior Stakeholder Influence | Vendor and Budget Management | Agile and SAFe
+
 
 PROFESSIONAL EXPERIENCE
 
 TOYOTA FINANCIAL SERVICES - Plano, Texas
-Head of Technology - BCL (Banking and Commercial Lending) & Consumer Lending | March 2025 - Present
+Head of Technology, Banking and Commercial Lending / Consumer Lending
+03/2025 - Present
 
-- Own technology strategy and execution for commercial lending platforms, aligning business, product, architecture, engineering, data, security, risk, and operations around a two-year modernization roadmap.
-- Directed delivery of a new, scalable $30B commercial loan origination platform supporting critical dealer and commercial-finance journeys.
-- Rebuilt the commercial loan origination system in under six months, establishing an execution model that accelerated delivery while operating within enterprise governance and regulatory controls.
-- Designed a configuration-driven user-interface platform that reduced selected change cycles from one month to approximately five minutes, improving product responsiveness and reducing implementation effort.
-- Modernized dealer and customer capabilities through API enablement, multi-cloud architecture, data integration, and end-to-end DevSecOps automation; tripled release velocity.
-- Built AI/ML-enabled credit-risk and customer-experience capabilities, including governed model access, monitoring, auditability, and controls for high-impact decisions.
-- Established platform guardrails, SLO-driven reliability practices, observability, and operational playbooks to improve resilience and production accountability.
-- Partnered with senior business, product, cybersecurity, risk, compliance, and infrastructure leaders to prioritize investments and translate business needs into scalable architecture and delivery plans.
-- Led globally distributed engineering and platform teams, coaching leaders and engineers while establishing measurable outcomes, clear decision rights, and shared accountability.
+- Own technology strategy, architecture, engineering execution, and production accountability for core lending platforms in a regulated financial services environment, directing a $185M annual technology portfolio across engineering, platform, and infrastructure investment.
+- Directed delivery of a new, scalable commercial loan origination platform supporting $30B in originations, serving critical dealer and commercial-finance journeys with stringent availability and data-integrity requirements.
+- Architected cloud-native, multi-cloud platform foundations using Infrastructure-as-Code, Kubernetes-based container deployment, automated CI/CD, and observability tooling, reducing annual cloud and infrastructure run cost by $12M.
+- Established SLO-driven reliability engineering, platform guardrails, observability, and operational playbooks that sustained 99.99% availability across mission-critical applications processing 4M+ transactions per day.
+- Tripled release velocity through end-to-end DevSecOps, API automation, reusable platform capabilities, and automated controls, materially improving developer productivity across globally distributed teams.
+- Designed a configuration-driven user-interface platform that cut selected change cycles from one month to approximately five minutes, avoiding $6M in annual delivery cost.
+- Built AI/ML-enabled credit-risk and customer-experience capabilities with governed model access, monitoring, auditability, and human oversight, driving a 15% lift in approval rates and a 20% reduction in defaults.
+- Institutionalized security-by-design across the SDLC, embedding threat modeling, vulnerability management, identity and access controls, and policy-as-code enforcement, reducing risk incidents by 25% and strengthening audit and regulatory posture.
+- Serve as the senior technical escalation point and trusted advisor to executive leadership, translating architecture, resilience, and security risk into clear business outcomes and investment decisions.
+- Recruit, mentor, and develop engineering managers and senior technical leaders, fostering a culture of technical excellence, accountability, and continuous learning.
 
-CAPITAL ONE - Plano, Texas | February 2016 - March 2025
-Director, Software Engineering - Marketing Technology and Analytics, Decisioning, AutoFinance | December 2021 - March 2025
-Progressive leadership roles: Senior Manager, Software Engineering | March 2019 - November 2021; Manager, Software Engineering | March 2017 - February 2019; Master Software Engineer | February 2016 - February 2017
+CAPITAL ONE - Plano, Texas
+02/2016 - 03/2025
+Director, Software Engineering - Marketing Technology and Analytics, Decisioning, Auto Finance | 12/2021 - 03/2025
+Senior Manager, Software Engineering | 03/2019 - 11/2021
+Manager, Software Engineering | 03/2017 - 02/2019
+Master Software Engineer | 02/2016 - 02/2017
 
-- Led software engineering for marketing technology, analytics, consumer-lending decisioning, and pricing platforms in a regulated, high-scale financial-services environment.
-- Defined and executed a platform strategy that reduced Adobe vendor lock-in, strengthened data governance, improved control of customer data, and delivered $240M+ in revenue impact.
-- Built AI/ML-driven marketing and analytics capabilities supporting millions of customer interactions, real-time personalization, targeting, and measurable engagement outcomes.
-- Delivered decisioning consumer loan origination systems and multi-lending and pricing platforms, connecting business policy, data, models, and digital experiences.
-- Advanced cloud migration, API integration, automation, and modern engineering practices to increase speed to market while maintaining security, governance, and operational discipline.
-- Worked across product, marketing, data science, architecture, cybersecurity, risk, and compliance to define roadmaps, resolve trade-offs, and scale reusable platform capabilities.
-- Established engineering standards, governance frameworks, KPIs, and SLOs to improve platform reliability, delivery quality, and accountability.
+- Led global engineering organizations of up to 120 engineers across regions and time zones, owning a $95M annual portfolio with accountability for strategy, architecture, delivery, governance, security, and operational maturity.
+- Defined and executed a marketing-technology platform strategy that reduced Adobe vendor lock-in, strengthened data governance and control of customer data, and delivered $240M+ in revenue impact.
+- Built and operated high-throughput data platforms and real-time streaming pipelines feeding analytics, decisioning, and personalization for millions of customer interactions, processing 850M+ events per day across data lake and lakehouse architectures.
+- Delivered consumer loan origination decisioning systems and multi-lending and pricing platforms connecting business policy, data, models, APIs, and digital experiences under strict regulatory and fair-lending controls.
+- Drove cloud-native modernization on AWS with Infrastructure-as-Code, containerized deployment, automated CI/CD, and observability, reducing infrastructure and licensing spend by $18M annually.
+- Built AI/ML and MLOps infrastructure supporting model training, deployment, monitoring, and governance for marketing, targeting, experimentation, and decisioning use cases.
+- Embedded secure software development practices, identity and access controls, threat modeling, and compliance requirements into platform delivery in partnership with Cybersecurity, Risk, and Compliance.
+- Represented engineering strategy and platform decisions to senior executives, translating technical choices into business value, operational risk, customer impact, and investment need.
 
-DELL EMC / EMC CORPORATION - New Jersey and Texas | May 2011 - January 2016
-Senior Cloud Software Architect / Engineering Leader | July 2013 - January 2016
-Earlier role: Cloud Engineer Specialist | May 2011 - July 2013
+DELL EMC / EMC CORPORATION - New Jersey and Texas
+Senior Cloud Software Architect / Engineering Leader | 07/2013 - 01/2016
+Cloud Engineer Specialist | 05/2011 - 07/2013
 
-- Architected and helped deliver ECS, ViPR, and UIM enterprise cloud and storage platforms adopted by global customers.
-- Defined hybrid-cloud architecture and a two-year product roadmap focused on scalability, resilience, automation, customer outcomes, and long-term platform evolution.
-- Designed distributed, fault-tolerant, highly available, and disaster-recovery-ready systems for enterprise workloads where integrity and continuity were foundational requirements.
-- Led $11M programs, balancing architecture, scope, schedule, investment priorities, engineering execution, and product commitments.
-- Created reusable architecture patterns and standards for distributed systems, storage optimization, orchestration, and platform automation.
-- Served as primary inventor on patented innovations in distributed systems, cloud storage, resiliency, automation, and user-experience technologies.
+- Owned architecture and engineering leadership for ECS, ViPR, and UIM enterprise cloud and object-storage platforms adopted by global enterprise and financial-services customers managing petabyte-scale data.
+- Designed distributed, fault-tolerant, highly available, disaster-recovery-ready systems for large-scale enterprise data and storage workloads with stringent throughput, latency, and durability requirements.
+- Led $11M multi-year engineering programs, coordinating architecture, execution, scope, schedules, resources, and product commitments across globally distributed teams.
+- Created reusable architecture patterns, platform standards, APIs, orchestration capabilities, and automation for storage provisioning and distributed cloud systems, generating $25M in operational savings for enterprise customers.
+- Served as primary inventor on patented innovations in distributed systems, cloud storage, automation, resiliency, and user-experience technologies.
 
-IPC SYSTEMS INC. - Fairfield, Connecticut | October 2009 - May 2011
-Frontend Engineering Leader | May 2010 - May 2011
-Earlier role: Principal UI Engineer | October 2009 - May 2010
+IPC SYSTEMS INC. - Fairfield, Connecticut
+Frontend Engineering Leader | 05/2010 - 05/2011
+Principal UI Engineer | 10/2009 - 05/2010
 
-- Built next-generation capital-markets trading platforms handling real-time data and low-latency execution requirements.
-- Led a global team of 60+ engineers with round-the-clock delivery across regions.
-- Established coding, design, user-interface, and architecture standards that improved consistency and engineering effectiveness across the enterprise trading domain.
-- Partnered across engineering, product, and operations to deliver reliable capabilities for time-sensitive financial workflows.
+- Delivered next-generation trading platforms for capital markets, handling real-time market data, low-latency execution workflows, and demanding reliability requirements where downtime carries direct trading loss.
+- Led a globally distributed engineering team of 60+ across regions and time zones, supporting round-the-clock development for market-infrastructure technology.
+- Established enterprise coding, design, user-interface, and architecture standards that improved engineering consistency and delivery quality across the trading platform portfolio.
 
-ADESA INC. - Carmel, Indiana | January 2008 - May 2009
-Lead Software Engineer - Java/J2EE/AJAX/Web 2.0
+ADESA INC. - Carmel, Indiana
+Lead Software Engineer - Java/J2EE | 01/2008 - 05/2009
 
-- Delivered full-stack applications for online vehicle auctions, inventory management, and live auction-floor data.
-- Integrated vehicle inventory from 12 vendors through file- and Salesforce-based workflows, enabling unified operational visibility.
-- Built online auction systems supporting transaction-oriented vehicle sales and auction rollover processes.
+- Led delivery of full-stack applications for online vehicle auctions, inventory management, and live auction-floor data with real-time bidding and settlement workflows.
 
-IBM - Bengaluru, India and Bari, Italy | August 2004 - January 2008
-Technical Lead | December 2006 - January 2008
-Progressive earlier roles: Systems Engineer and Senior Systems Engineer
+IBM - Bengaluru, India and Bari, Italy
+Technical Lead | 12/2006 - 01/2008
+Senior Systems Engineer / Systems Engineer | 08/2004 - 12/2006
 
-- Built ACG Express capabilities and enterprise applications using Java/J2EE, web services, reporting, CRM, and integration technologies.
-- Built and led an offshore engineering team and delivered complex applications across India and Italy.
-- Developed reporting and application capabilities using Jasper technologies, DB2, Struts, Dojo, SAP technologies, and related enterprise platforms.
+- Delivered ACG Express capabilities and enterprise systems using Java/J2EE, web services, reporting, CRM, database, and integration technologies.
 
-ENTREPRENEURIAL LEADERSHIP - FOUNDER AND 0-TO-1 PLATFORM BUILDING
 
-Beyond enterprise leadership, founded and built four ventures from concept to production, owning product vision, platform architecture, and engineering execution as a unified discipline. Applied a product-and-engineering operating model at startup speed, converting market opportunities into launched platforms without the infrastructure or safety net of a large enterprise.
+ENTREPRENEURIAL AND 0-TO-1 PLATFORM LEADERSHIP
 
-RUNNINGTICKER.COM - Founder
+Founded and personally built four ventures from concept to production, owning product strategy, architecture, engineering execution, launch, and platform evolution.
 
-- Conceived, built, and scaled a financial analytics platform from zero to a successful exit.
-- Owned product strategy, architecture, engineering execution, launch, and platform evolution end to end.
+- RunningTicker.com: Conceived and scaled a financial analytics platform from zero to a successful exit.
+- RentMitra Inc.: AI-powered rental marketplace connecting property owners and tenants through automated workflows (https://rentmitra.lovable.app).
+- GingerKnife Inc. / VantaShala.com: AI-backed HomeChefs marketplace built and led from the ground up (https://VantaShala.com).
+- AlliBilli.com: All-in-one news platform designed for elderly users (https://allibilli.com).
 
-RENTMITRA INC. - Founder
-Platform: https://rentmitra.lovable.app
 
-- Built an AI-powered rental marketplace from product concept through architecture, engineering, and launch.
-- Connected property owners and tenants nationwide through a digital platform with automated legal-agreement workflows.
-
-GINGERKNIFE INC. / VANTASHALA.COM - Founder
-Platform: https://VantaShala.com
-
-- Built and led an AI-backed HomeChefs marketplace platform from the ground up.
-- Unified product design, platform architecture, and engineering delivery to create a marketplace promoting healthy homemade food.
-
-ALLIBILLI.COM - Founder
-Platform: https://allibilli.com
-
-- Designed, built, and launched an all-in-one news platform tailored to elderly users.
-- Served as product owner and technical architect, directing the platform from concept through production delivery.
-
-PLATFORM, AI, AND OPERATIONAL LEADERSHIP
-
-- Composable platforms: Reusable APIs, SDKs, microservices, reference architectures, golden paths, and self-service capabilities that reduce onboarding effort and time to value.
-- AI-enabled engineering: Model selection and routing, governed model access, RAG and agent patterns, evaluation, telemetry, regression testing, rollout controls, and developer automation.
-- Responsible AI: Risk classification, access controls, data entitlements, human-in-the-loop workflows, audit-ready logging, model monitoring, and policy enforcement.
-- Reliability engineering: SLOs, observability, resilient architecture, high availability, disaster recovery, event-driven integrations, incident accountability, and operational playbooks.
-- Secure delivery: DevSecOps, CI/CD, automated testing, threat modeling, privacy, compliance controls, and close partnership across engineering, cybersecurity, infrastructure, and operations.
-- Portfolio stewardship: Multi-year roadmaps, program budgets, vendor strategy, prioritization, measurable KPIs, and investment decisions grounded in business value, risk, and platform sustainability.
-
-PATENTS, PUBLICATIONS, AND INDUSTRY LEADERSHIP
+PATENTS, PUBLICATIONS, AND THOUGHT LEADERSHIP
 
 - Primary inventor on 28 issued patents from 37 filings in distributed systems, cloud storage, resiliency, automation, and related technologies.
-- Founder and author of ThinkSpecial, with 100+ articles on technology, platform architecture, distributed systems, leadership, cloud, and AI.
-- Speaker at Cloud Expo International, DZone Live, and enterprise executive forums on distributed leader election, cloud architecture, and engineering leadership.
-- Published contributor on autonomous networking, software resilience, and the intersection of technical architecture and business strategy.
-- Advisor to early-stage AI ventures and mentor to technology and STEM leaders.
+- Founder and author of ThinkSpecial, with 100+ published articles on engineering, cloud platforms, distributed systems, architecture, AI, and leadership (https://medium.com/thinkspecial).
+- Speaker at Cloud Expo International, DZone Live, and enterprise executive forums on distributed systems, cloud architecture, and engineering leadership.
+- Advisor to early-stage AI ventures and mentor to technology, engineering, and STEM leaders.
 
-EDUCATION AND CERTIFICATIONS
+
+EDUCATION
 
 Master of Science, Information Systems - Nagarjuna University, Guntur, India | 2003
 Bachelor of Computer Applications - Nagarjuna University, India | 2001
-AWS Certified Solutions Architect | Java Certification | SAFe Certification
 
-LOCATION
 
-Based in Frisco, Texas
+CERTIFICATIONS
+
+AWS Certified Solutions Architect
+SAFe Certified
+Java Certification
+
+
+LOCATION AND AVAILABILITY
+
+Based in Frisco, Texas | Open to relocation | Portfolio: https://gopikancharla.com | Experienced leading remote and globally distributed engineering organizations
