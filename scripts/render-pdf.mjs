@@ -4,7 +4,7 @@ import process from "node:process";
 import puppeteer from "puppeteer-core";
 
 const workspaceDir = process.cwd();
-const inputHtml = path.resolve(workspaceDir, "gopi_profile.html");
+const inputHtml = path.resolve(workspaceDir, "index.html");
 const outputPdf = path.resolve(workspaceDir, "gopi_profile.pdf");
 
 if (!fs.existsSync(inputHtml)) {
