@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Download Gopi K Kancharla's executive, engineering, platform, and AI leadership resumes.">
-    <title>Resumes | Gopi K Kancharla</title>
+    <meta name="description" content="Download Gopi K Kancharla's current resume.">
+    <title>Resume | Gopi K Kancharla</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -23,6 +23,8 @@
         --green: #72d4a7;
         --border: #243344;
         --border-bright: #36516b;
+        --gold: #f0c674;
+        --gradient-page: linear-gradient(135deg, #101d2c 0%, #16182a 50%, #121729 100%);
         --shadow: 0 22px 60px rgba(0, 0, 0, 0.32);
       }
 
@@ -40,10 +42,33 @@
         color: var(--ink);
         font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         line-height: 1.6;
+        background: var(--gradient-page);
+        background-repeat: no-repeat;
+      }
+
+      /* Ambient glow + top accent rule, matching the profile page */
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        content: "";
+        pointer-events: none;
         background:
-          radial-gradient(circle at 50% -10%, rgba(99, 179, 237, 0.15), transparent 34rem),
-          radial-gradient(circle at 8% 35%, rgba(118, 75, 162, 0.09), transparent 28rem),
-          linear-gradient(180deg, #0a1016 0%, #0d1620 52%, #0a1016 100%);
+          radial-gradient(900px at 50% 0%, rgba(240, 198, 116, 0.07), transparent 60%),
+          radial-gradient(800px at 12% 18%, rgba(118, 75, 162, 0.1), transparent 62%),
+          radial-gradient(900px at 88% 30%, rgba(99, 179, 237, 0.09), transparent 64%);
+      }
+
+      body::after {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        height: 3px;
+        content: "";
+        pointer-events: none;
+        background: linear-gradient(90deg, var(--gold), var(--accent));
       }
 
       a {
@@ -204,6 +229,11 @@
         gap: 18px;
       }
 
+      .resume-grid.single {
+        max-width: 620px;
+        grid-template-columns: minmax(0, 1fr);
+      }
+
       .resume-card {
         position: relative;
         display: flex;
@@ -224,7 +254,7 @@
         height: 2px;
         content: "";
         opacity: 0.8;
-        background: linear-gradient(90deg, var(--accent), var(--violet), transparent 80%);
+        background: linear-gradient(90deg, var(--gold), var(--accent));
       }
 
       .resume-card:hover {
@@ -435,215 +465,33 @@
 
     <main class="shell">
       <section class="hero">
-        <div class="eyebrow">Resume Library</div>
-        <h1>Choose the story that fits the opportunity.</h1>
-        <p class="hero-copy">Executive, engineering, platform, and AI leadership resumes—organized by target role and available as direct PDF or plain-text downloads.</p>
-        <div class="summary-row" aria-label="Resume library summary">
-          <span class="summary-chip">8 resume versions</span>
-          <span class="summary-chip">9 downloadable files</span>
-          <span class="summary-chip">PDF + ATS-friendly TXT</span>
-        </div>
+        <div class="eyebrow">Resume</div>
+        <h1>The current resume, in one place.</h1>
+        <p class="hero-copy">One up-to-date resume covering enterprise platforms, cloud, data, AI leadership, and the ventures I have built from scratch.</p>
       </section>
 
-      <section class="resume-section" aria-labelledby="targeted-heading">
+      <section class="resume-section" aria-labelledby="resume-heading">
         <div class="section-heading">
           <div>
-            <h2 id="targeted-heading">Targeted Applications</h2>
-            <p>Role-specific versions aligned to the company, mandate, and leadership outcomes.</p>
+            <h2 id="resume-heading">Download</h2>
+            <p>Always the latest version — replaced in place whenever the resume is refreshed.</p>
           </div>
-          <span class="section-count">2 versions · 3 files</span>
         </div>
 
-        <div class="resume-grid">
+        <div class="resume-grid single">
           <article class="resume-card featured">
             <div class="card-topline">
-              <span class="company-tag">Enterprise Software</span>
+              <span class="company-tag">Technology Executive</span>
               <span class="format-list" aria-label="Available formats">
                 <span class="format-tag">PDF</span>
-                <span class="format-tag">TXT</span>
               </span>
             </div>
-            <h3>VP Engineering</h3>
-            <p>Global engineering scale, delivery predictability, AI-native development, cloud platforms, and organizational leadership.</p>
-            <div class="meta-row">
-              <span>3-page PDF</span>
-              <span>Updated July 2026</span>
-              <span>Executive ATS format</span>
-            </div>
+            <h3>Gopi K Kancharla — Resume</h3>
+            <p>Enterprise platforms, cloud and data modernization, AI/ML and GenAI leadership, engineering organizations at scale, and founder-built ventures.</p>
             <div class="download-row">
-              <a class="download-btn primary" href="../output/pdf/Gopi_Kancharla_VP_Engineering_Resume.pdf" download="Gopi_Kancharla_VP_Engineering_Resume.pdf">
+              <a class="download-btn primary" href="../Gopi_Kancharla_Resume.pdf" download="Gopi_Kancharla_Resume.pdf">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
-                Download PDF
-              </a>
-              <a class="download-btn" href="../Gopi_Kancharla_VP_Engineering_Resume.txt" download>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
-                Download TXT
-              </a>
-            </div>
-          </article>
-
-          <article class="resume-card featured">
-            <div class="card-topline">
-              <span class="company-tag">Visa</span>
-              <span class="format-list" aria-label="Available formats">
-                <span class="format-tag">TXT</span>
-              </span>
-            </div>
-            <h3>SVP, Platform &amp; Product Development</h3>
-            <p>Commercial and money movement platforms, regulated financial systems, enterprise architecture, resilience, and AI governance.</p>
-            <div class="meta-row">
-              <span>ATS plain text</span>
-              <span>Updated July 2026</span>
-              <span>Visa CMS</span>
-            </div>
-            <div class="download-row">
-              <a class="download-btn primary" href="../Gopi_Kancharla_Resume.txt" download="Gopi_Kancharla_Visa_SVP_Resume.txt">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
-                Download TXT
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="resume-section" aria-labelledby="executive-heading">
-        <div class="section-heading">
-          <div>
-            <h2 id="executive-heading">Executive Leadership</h2>
-            <p>Broader CIO, CTO, technology strategy, transformation, and enterprise leadership narratives.</p>
-          </div>
-          <span class="section-count">3 versions · 3 files</span>
-        </div>
-
-        <div class="resume-grid">
-          <article class="resume-card">
-            <div class="card-topline">
-              <span class="company-tag">Executive</span>
-              <span class="format-list"><span class="format-tag">PDF</span></span>
-            </div>
-            <h3>Executive Resume</h3>
-            <p>Concise technology executive profile spanning enterprise platforms, financial services, cloud, data, AI, and global leadership.</p>
-            <div class="meta-row">
-              <span>2 pages</span>
-              <span>140 KB</span>
-              <span>Updated July 2026</span>
-            </div>
-            <div class="download-row">
-              <a class="download-btn primary" href="../Gopi_Kancharla_Executive_Resume.pdf" download>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
-                Download PDF
-              </a>
-            </div>
-          </article>
-
-          <article class="resume-card">
-            <div class="card-topline">
-              <span class="company-tag">CIO / CTO</span>
-              <span class="format-list"><span class="format-tag">PDF</span></span>
-            </div>
-            <h3>Professional Executive Resume</h3>
-            <p>Focused overview of technology strategy, operational excellence, cybersecurity, transformation, people leadership, and financial stewardship.</p>
-            <div class="meta-row">
-              <span>2 pages</span>
-              <span>5 KB</span>
-              <span>Executive summary</span>
-            </div>
-            <div class="download-row">
-              <a class="download-btn primary" href="../Gopi_Resume_Professional.pdf" download>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
-                Download PDF
-              </a>
-            </div>
-          </article>
-
-          <article class="resume-card">
-            <div class="card-topline">
-              <span class="company-tag">CTO Portfolio</span>
-              <span class="format-list"><span class="format-tag">PDF</span></span>
-            </div>
-            <h3>CTO Transformation Resume</h3>
-            <p>Digital transformation, cloud modernization, data and AI platforms, DevSecOps, customer journeys, and global operating models.</p>
-            <div class="meta-row">
-              <span>3 pages</span>
-              <span>89 KB</span>
-              <span>Portfolio format</span>
-            </div>
-            <div class="download-row">
-              <a class="download-btn primary" href="../Gopi_K_Kancharla_Resume.pdf" download>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
-                Download PDF
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="resume-section" aria-labelledby="specialized-heading">
-        <div class="section-heading">
-          <div>
-            <h2 id="specialized-heading">Specialized Profiles</h2>
-            <p>Deeper profiles for AI architecture, platform engineering, cloud, data, and technical thought leadership.</p>
-          </div>
-          <span class="section-count">3 versions · 3 files</span>
-        </div>
-
-        <div class="resume-grid">
-          <article class="resume-card">
-            <div class="card-topline">
-              <span class="company-tag">AI Architecture</span>
-              <span class="format-list"><span class="format-tag">PDF</span></span>
-            </div>
-            <h3>AI Architecture Profile</h3>
-            <p>Enterprise AI strategy, GenAI platforms, agentic systems, RAG, model governance, MLOps, LLMOps, security, and responsible AI.</p>
-            <div class="meta-row">
-              <span>3 pages</span>
-              <span>716 KB</span>
-              <span>Architecture focus</span>
-            </div>
-            <div class="download-row">
-              <a class="download-btn primary" href="../Gopi%20K%20Kancharla%20%E2%80%94%20AI%20Architecture%20Profile.pdf" download="Gopi_Kancharla_AI_Architecture_Profile.pdf">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
-                Download PDF
-              </a>
-            </div>
-          </article>
-
-          <article class="resume-card">
-            <div class="card-topline">
-              <span class="company-tag">Technology Profile</span>
-              <span class="format-list"><span class="format-tag">PDF</span></span>
-            </div>
-            <h3>CIO / CTO Strategy Profile</h3>
-            <p>Extended leadership profile covering platform engineering, enterprise architecture, AI governance, automation, reliability, and career highlights.</p>
-            <div class="meta-row">
-              <span>5 pages</span>
-              <span>612 KB</span>
-              <span>Detailed profile</span>
-            </div>
-            <div class="download-row">
-              <a class="download-btn primary" href="../Gopi_Resume.pdf" download>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
-                Download PDF
-              </a>
-            </div>
-          </article>
-
-          <article class="resume-card">
-            <div class="card-topline">
-              <span class="company-tag">Platform &amp; AI</span>
-              <span class="format-list"><span class="format-tag">PDF</span></span>
-            </div>
-            <h3>Technology Leadership Profile</h3>
-            <p>Platform strategy, AI-enabled decisioning, security, enterprise outcomes, operational reliability, innovation, and leadership philosophy.</p>
-            <div class="meta-row">
-              <span>5 pages</span>
-              <span>516 KB</span>
-              <span>Leadership profile</span>
-            </div>
-            <div class="download-row">
-              <a class="download-btn primary" href="../gopi_profile.pdf" download>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
-                Download PDF
+                Download Resume
               </a>
             </div>
           </article>
