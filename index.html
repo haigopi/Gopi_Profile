@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Gopi K Kancharla — Profile</title>
       <link rel="canonical" href="https://gopikancharla.com/">
-      <meta name="description" content="Gopi K Kancharla — Technology Executive. Platform engineering, multi-cloud infrastructure, low-latency distributed systems, data platforms, and AI/ML leadership. Based in Frisco, Texas and open to relocation.">
+      <meta name="description" content="Gopi K Kancharla — Engineering leader and founder building AI-native, real-time decisioning platforms: streaming, AI inference, and resilient cloud-native systems at financial-services scale. Based in Frisco, Texas and open to relocation.">
       <link href="https://fonts.googleapis.com" rel="preconnect">
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -768,6 +768,75 @@
          border-bottom: none;
          padding-bottom: 0;
          }
+         .pipeline {
+         display: grid;
+         gap: 10px;
+         grid-template-columns: repeat(5, 1fr);
+         counter-reset: stage;
+         }
+         .stage {
+         position: relative;
+         padding: 14px;
+         border-radius: 14px;
+         background: rgba(28, 39, 51, 0.45);
+         border: 1px solid var(--border);
+         border-top: 2px solid var(--series);
+         display: flex;
+         flex-direction: column;
+         gap: 4px;
+         }
+         .stage:not(:last-child)::after {
+         content: "→";
+         position: absolute;
+         right: -11px;
+         top: 50%;
+         transform: translateY(-50%);
+         color: var(--muted);
+         font-size: 14px;
+         z-index: 1;
+         }
+         .stage-n {
+         font-size: 12px;
+         font-weight: 700;
+         color: var(--accent);
+         letter-spacing: 1px;
+         }
+         .stage .small {
+         font-size: 13.5px;
+         flex-grow: 1;
+         }
+         .stage-org {
+         margin-top: 6px;
+         font-size: 12px;
+         font-weight: 600;
+         color: var(--gold);
+         }
+         .fit-grid {
+         display: grid;
+         gap: 14px;
+         grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+         }
+         .fit-grid > div {
+         display: flex;
+         flex-direction: column;
+         gap: 4px;
+         }
+         .fit-grid .small {
+         font-size: 14px;
+         }
+         @media (max-width: 900px) {
+         .pipeline {
+         grid-template-columns: 1fr;
+         }
+         .stage:not(:last-child)::after {
+         content: "↓";
+         right: auto;
+         left: 50%;
+         top: auto;
+         bottom: -14px;
+         transform: translateX(-50%);
+         }
+         }
          @media print {
          details > *:not(summary) {
          display: block;
@@ -799,9 +868,9 @@
                   <img src="Gopi_Picture.jpeg" alt="Gopi K Kancharla" width="132" height="132" onerror="this.remove()">
                </div>
             </div>
-            <div class="pill">CIO • CTO • Strategy • Cloud • Data • AI/ML • Founder</div>
+            <div class="pill">Engineering Co-Founder • AI-Native Decisioning • Real-Time Streaming • Builder</div>
             <h1 class="title">Gopi K Kancharla</h1>
-            <p class="subtitle">Technology Executive | Head of Technology | Toyota | Ex‑Capital One | Founder, Building Ventures From Scratch</p>
+            <p class="subtitle">Engineering Leader &amp; Founder | Building AI-Native, Real-Time Decisioning Platforms | Head of Technology, Toyota | Ex‑Capital One</p>
             <p class="location-line">📍 Frisco, Texas, USA &nbsp;•&nbsp; <strong>Open to Relocation</strong> &nbsp;•&nbsp; <a href="https://gopikancharla.com">GopiKancharla.com</a></p>
             <div class="cta-row">
                <button class="btn" onclick="alert('Email: haigopi@gmail.com')">✉️ Email</button>
@@ -818,14 +887,14 @@
          <section aria-labelledby="impact-heading">
             <div class="eyebrow" id="impact-heading">Impact at a Glance</div>
             <div class="kpi-grid">
-               <div class="tile"><div class="tile-value">20+</div><div class="tile-label">Years in engineering &amp; platforms</div></div>
-               <div class="tile"><div class="tile-value">$185M</div><div class="tile-label">Annual technology portfolio owned</div></div>
-               <div class="tile"><div class="tile-value">$30B</div><div class="tile-label">Loan originations on platform delivered</div></div>
+               <div class="tile"><div class="tile-value">850M+</div><div class="tile-label">Events/day on real-time streaming feeding decisioning</div></div>
                <div class="tile"><div class="tile-value">99.99%</div><div class="tile-label">Availability at 4M+ transactions/day</div></div>
-               <div class="tile"><div class="tile-value">850M+</div><div class="tile-label">Streaming events processed per day</div></div>
+               <div class="tile"><div class="tile-value">&lt;6 mo</div><div class="tile-label">To rebuild a core loan origination platform</div></div>
+               <div class="tile"><div class="tile-value">$30B</div><div class="tile-label">Originations on the greenfield platform delivered</div></div>
+               <div class="tile"><div class="tile-value">+15%</div><div class="tile-label">Loan approvals with AI credit-risk decisioning — and 20% fewer defaults</div></div>
                <div class="tile"><div class="tile-value">120</div><div class="tile-label">Engineers led across global teams</div></div>
-               <div class="tile"><div class="tile-value">$240M+</div><div class="tile-label">Revenue impact from MarTech strategy</div></div>
-               <div class="tile"><div class="tile-value">28</div><div class="tile-label">Patents as primary inventor</div></div>
+               <div class="tile"><div class="tile-value">3</div><div class="tile-label">Ventures founded and built from the first line of code</div></div>
+               <div class="tile"><div class="tile-value">28</div><div class="tile-label">Patents as primary inventor in distributed systems</div></div>
             </div>
          </section>
 
@@ -833,27 +902,79 @@
             <div class="card">
                <h2>Executive Summary</h2>
                <p class="small">
-                  Technology executive and player-coach with 20+ years across platform engineering, multi-cloud infrastructure, and large-scale distributed systems — 7+ years leading global organizations as a manager of managers.
-                  I run mission-critical financial platforms where uptime, latency, and resilience are paramount, with security-by-design built in from day one — and I build my own ventures from scratch on the side.
+                  Engineering leader and founder who builds real-time decisioning platforms: decisioning engines and rules platforms on graph databases, Rete networks, and bitmap indexes; streaming at 850M+ events/day; AI/ML credit-risk and loan decisioning; and cloud-native systems running at 99.99% availability in regulated financial services.
+                  20+ years in distributed systems and 7+ leading global organizations as a manager of managers — with the builder's instinct of someone who has founded three ventures and taken them from idea to live product. I move fast with data, keep engineering discipline enterprise-grade, and hold teams to outcomes, not output.
                </p>
                <hr class="sep">
                <div class="badges" aria-label="Executive Summary focus areas">
-                  <span class="pill">Platform Engineering</span>
-                  <span class="pill">Enterprise Architecture</span>
+                  <span class="pill">Real-Time Decisioning</span>
+                  <span class="pill">Rules Engines (Rete Networks)</span>
+                  <span class="pill">Graph Databases & Bitmap Indexes</span>
+                  <span class="pill">AI / ML Inference & MLOps</span>
+                  <span class="pill">Kafka & Event-Driven Architecture</span>
+                  <span class="pill">Cloud-Native Microservices</span>
+                  <span class="pill">Low-Latency Distributed Systems</span>
+                  <span class="pill">Resiliency & SRE</span>
+                  <span class="pill">Observability</span>
                   <span class="pill">Multi-Cloud (AWS • Azure • GCP)</span>
                   <span class="pill">Kubernetes & IaC</span>
-                  <span class="pill">Low-Latency Distributed Systems</span>
-                  <span class="pill">Data Lakes & Lakehouses</span>
-                  <span class="pill">Real-Time Streaming</span>
-                  <span class="pill">Observability & SRE</span>
-                  <span class="pill">Micro Services & Micro Frontends</span>
-                  <span class="pill">AI Governance</span>
-                  <span class="pill">Model Selection & Routing</span>
-                  <span class="pill">GenAI & Agentic Systems</span>
-                  <span class="pill">MLOps & LLMOps</span>
-                  <span class="pill">DevSecOps</span>
-                  <span class="pill">Security & Risk</span>
-                  <span class="pill">Test Automation</span>
+                  <span class="pill">Credit Risk & Lending</span>
+                  <span class="pill">Security-by-Design</span>
+                  <span class="pill">Model Governance</span>
+                  <span class="pill">Greenfield Platforms</span>
+                  <span class="pill">Founder / 0→1</span>
+               </div>
+            </div>
+         </section>
+
+         <section>
+            <div class="card">
+               <h2>Built for AI-Native Decisioning</h2>
+               <p class="small chart-sub">A real-time decision platform, stage by stage — and where I have built each piece in production.</p>
+               <div class="pipeline" aria-label="Decisioning pipeline">
+                  <div class="stage"><div class="stage-n">01</div><div class="cap-title">Stream</div><div class="small">Kafka pipelines at 850M+ events/day feeding analytics and decisioning.</div><div class="stage-org">Capital One</div></div>
+                  <div class="stage"><div class="stage-n">02</div><div class="cap-title">Rules &amp; Decision Engines</div><div class="small">Built decisioning engines and rules platforms on graph databases, Rete networks, and bitmap indexes; loan origination decisioning, multi-lending, and pricing.</div><div class="stage-org">Capital One · Toyota</div></div>
+                  <div class="stage"><div class="stage-n">03</div><div class="cap-title">AI Inference</div><div class="small">Governed credit-risk models: +15% approvals, −20% defaults. MLOps for training, deployment, monitoring.</div><div class="stage-org">Toyota · Capital One</div></div>
+                  <div class="stage"><div class="stage-n">04</div><div class="cap-title">Decide at Scale</div><div class="small">99.99% availability at 4M+ transactions/day; low-latency trading systems where downtime is loss.</div><div class="stage-org">Toyota · IPC</div></div>
+                  <div class="stage"><div class="stage-n">05</div><div class="cap-title">Observe &amp; Govern</div><div class="small">SLOs, observability, audit-ready model governance, policy-as-code; risk incidents −25%.</div><div class="stage-org">Toyota</div></div>
+               </div>
+               <hr class="sep">
+               <div class="fit-grid">
+                  <div><strong>Greenfield, fast</strong><span class="small">Rebuilt a core commercial loan origination platform in under six months with focused teams, rapid feedback loops, and clear decision rights — now supporting $30B in originations.</span></div>
+                  <div><strong>Builder &amp; founder</strong><span class="small">Founded RentMitra, GingerKnife, and AlliBilli — wrote the first code, shaped the product, took them to real users.</span></div>
+                  <div><strong>Scale the org</strong><span class="small">Grew and led global engineering organizations of up to 120 across regions; manager of managers for 7+ years.</span></div>
+                  <div><strong>Product partnership</strong><span class="small">Translate product strategy into platform roadmaps and investment calls; $240M+ revenue impact from a platform strategy.</span></div>
+               </div>
+            </div>
+         </section>
+
+         <section class="founder-section" id="ventures">
+            <div class="founder-intro">
+               <div class="eyebrow">Entrepreneurship</div>
+               <h2>A Builder at Heart: Ventures From Scratch</h2>
+               <p class="small">Beyond the enterprise, I've founded and personally built these ventures from the ground up — writing the first line of code, shaping the product, and taking them to real users.</p>
+            </div>
+            <div class="venture-grid">
+               <div class="venture-card">
+                  <div class="venture-icon">🏠</div>
+                  <span class="founder-badge">★ Founder</span>
+                  <div class="venture-name">RentMitra Inc</div>
+                  <p class="venture-desc">AI-powered rental marketplace connecting property owners and tenants nationwide, with legal agreement solutions.</p>
+                  <a class="venture-link" href="https://rentmitra.lovable.app/" target="_blank" rel="noopener">Visit rentmitra.lovable.app →</a>
+               </div>
+               <div class="venture-card">
+                  <div class="venture-icon">🍲</div>
+                  <span class="founder-badge">★ Founder</span>
+                  <div class="venture-name">GingerKnife Inc</div>
+                  <p class="venture-desc">AI-backed HomeChefs marketplace for healthy homemade food.</p>
+                  <a class="venture-link" href="https://VantaShala.com/" target="_blank" rel="noopener">Visit VantaShala.com →</a>
+               </div>
+               <div class="venture-card">
+                  <div class="venture-icon">📰</div>
+                  <span class="founder-badge">★ Founder</span>
+                  <div class="venture-name">AlliBilli.com</div>
+                  <p class="venture-desc">All-in-one news platform helping elderly people stay informed and connected.</p>
+                  <a class="venture-link" href="https://allibilli.com/" target="_blank" rel="noopener">Visit AlliBilli.com →</a>
                </div>
             </div>
          </section>
@@ -997,36 +1118,6 @@
             </div>
          </section>
 
-         <section class="founder-section" id="ventures">
-            <div class="founder-intro">
-               <div class="eyebrow">Entrepreneurship</div>
-               <h2>Growing Businesses From Scratch</h2>
-               <p class="small">Beyond the enterprise, I've founded and personally built these ventures from the ground up — writing the first line of code, shaping the product, and taking them to real users.</p>
-            </div>
-            <div class="venture-grid">
-               <div class="venture-card">
-                  <div class="venture-icon">🏠</div>
-                  <span class="founder-badge">★ Founder</span>
-                  <div class="venture-name">RentMitra Inc</div>
-                  <p class="venture-desc">AI-powered rental marketplace connecting property owners and tenants nationwide, with legal agreement solutions.</p>
-                  <a class="venture-link" href="https://rentmitra.lovable.app/" target="_blank" rel="noopener">Visit rentmitra.lovable.app →</a>
-               </div>
-               <div class="venture-card">
-                  <div class="venture-icon">🍲</div>
-                  <span class="founder-badge">★ Founder</span>
-                  <div class="venture-name">GingerKnife Inc</div>
-                  <p class="venture-desc">AI-backed HomeChefs marketplace for healthy homemade food.</p>
-                  <a class="venture-link" href="https://VantaShala.com/" target="_blank" rel="noopener">Visit VantaShala.com →</a>
-               </div>
-               <div class="venture-card">
-                  <div class="venture-icon">📰</div>
-                  <span class="founder-badge">★ Founder</span>
-                  <div class="venture-name">AlliBilli.com</div>
-                  <p class="venture-desc">All-in-one news platform helping elderly people stay informed and connected.</p>
-                  <a class="venture-link" href="https://allibilli.com/" target="_blank" rel="noopener">Visit AlliBilli.com →</a>
-               </div>
-            </div>
-         </section>
 
          <section>
             <div class="card">
@@ -1034,12 +1125,12 @@
                <div class="cap-grid">
                   <div class="cap"><div class="cap-title">Executive Partnership</div><div class="small">Prioritize high-impact use cases, scale what works, measure outcomes.</div></div>
                   <div class="cap"><div class="cap-title">Engineering Leadership</div><div class="small">Distributed orgs up to ~120 engineers with clear KPIs and DevSecOps discipline.</div></div>
+                  <div class="cap"><div class="cap-title">Decisioning Engines</div><div class="small">Rules platforms built on graph databases, Rete networks, and bitmap indexes for fast, explainable decisions.</div></div>
                   <div class="cap"><div class="cap-title">Architecture & Innovation</div><div class="small">Standards, reference architectures, golden paths, centers of excellence.</div></div>
                   <div class="cap"><div class="cap-title">Enterprise AI Platform</div><div class="small">APIs &amp; SDKs for model access, policy-driven routing with fallbacks, LLMOps evals and telemetry.</div></div>
                   <div class="cap"><div class="cap-title">GenAI & Agentic Systems</div><div class="small">Agent runtimes, MCP integrations, guardrails, self-critique, human in the loop.</div></div>
                   <div class="cap"><div class="cap-title">Responsible AI & Risk</div><div class="small">Entitlements, risk classification, policy-as-code, audit-ready logging.</div></div>
                   <div class="cap"><div class="cap-title">Operational Reliability</div><div class="small">SLO-driven engineering, observability, event-driven automation, playbooks.</div></div>
-                  <div class="cap"><div class="cap-title">Enterprise Value</div><div class="small">Self-service platforms with adoption and ROI instrumentation.</div></div>
                </div>
             </div>
          </section>
@@ -1048,11 +1139,12 @@
             <div class="card">
                <h2>My Leadership Style</h2>
                <div class="principles">
-                  <div><strong>Clarity</strong><span class="small">Outcomes, constraints, and decentralized decision rights.</span></div>
-                  <div><strong>Trust</strong><span class="small">Autonomy, coaching, and accountability.</span></div>
-                  <div><strong>Guardrails</strong><span class="small">Make the safe path the easiest path.</span></div>
-                  <div><strong>Measurement</strong><span class="small">Instrument adoption, quality, and risk.</span></div>
-                  <div><strong>People</strong><span class="small">Invest in growth and strong relationships.</span></div>
+                  <div><strong>Bias for action</strong><span class="small">Decide quickly with data and customer insight; learn in short iteration cycles.</span></div>
+                  <div><strong>Ownership</strong><span class="small">Clear outcomes and decentralized decision rights — teams own results, not tickets.</span></div>
+                  <div><strong>Guardrails</strong><span class="small">Make the safe path the easiest path: speed with enterprise-grade discipline.</span></div>
+                  <div><strong>Measurement</strong><span class="small">Instrument adoption, quality, reliability, and risk; improve what matters.</span></div>
+                  <div><strong>Transparency</strong><span class="small">Open context across product, architecture, and operations; remove barriers fast.</span></div>
+                  <div><strong>People</strong><span class="small">Autonomy, coaching, and growth for every engineer.</span></div>
                </div>
             </div>
             <div class="card">
