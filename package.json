@@ -7,6 +7,6 @@
   },
   "scripts": {
     "pdf": "node scripts/render-pdf.mjs",
-    "pdf:resume": "node scripts/render-resume-pdf.mjs resumes/engineering-cofounder-decisioning.html pdfs/Gopi_Kancharla_Engineering_CoFounder_Decisioning_Resume_Designed.pdf"
+    "pdf:resume": "node scripts/render-resume-pdf.mjs resumes/engineering-cofounder-decisioning.html pdfs/Gopi_Kancharla_Engineering_Executive.pdf"
   }
 }
