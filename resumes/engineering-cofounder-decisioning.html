@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gopi K Kancharla — Resume</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #17222e;
+    --muted: #55636f;
+    --navy: #17324d;
+    --blue: #256abf;
+    --blue-soft: #e8f0fb;
+    --gold: #b87800;
+    --rule: #d9e2ea;
+    --panel: #f4f7fa;
+    --lvl-1: #9ec5f4;
+    --lvl-2: #5598e7;
+    --lvl-3: #2a78d6;
+    --lvl-4: #1c5cab;
+    --lvl-now: #c98500;
+  }
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  html, body { margin: 0; background: #e9edf1; }
+  body { font-family: Inter, "Helvetica Neue", Arial, sans-serif; color: var(--ink); font-size: 8.3pt; line-height: 1.38; }
+  .page {
+    width: 8.5in; height: 11in; margin: 16px auto; background: #fff;
+    padding: 0.42in 0.46in 0.36in; position: relative; overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0,0,0,.12);
+  }
+  .page::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, var(--gold), var(--blue)); }
+  @media print { html, body { background: #fff; } .page { margin: 0; box-shadow: none; page-break-after: always; } .page:last-child { page-break-after: auto; } }
+
+  a { color: var(--blue); text-decoration: none; }
+  h1 { font-size: 24pt; font-weight: 800; letter-spacing: .2px; margin: 0; color: var(--navy); line-height: 1.05; }
+  .role-title { font-size: 10.2pt; font-weight: 700; color: var(--blue); margin: 4px 0 2px; }
+  .tagline { color: var(--muted); font-size: 8.4pt; }
+  .contact { text-align: right; font-size: 8pt; color: var(--muted); line-height: 1.6; white-space: nowrap; }
+  .contact strong { color: var(--gold); }
+  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+
+  h2 { font-size: 8.4pt; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase; color: var(--navy); margin: 10px 0 5px; display: flex; align-items: center; gap: 8px; }
+  h2::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+
+  .kpis { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin-top: 10px; }
+  .kpi { background: var(--panel); border-radius: 7px; padding: 7px 8px 6px; border-top: 2px solid var(--blue); }
+  .kpi.now { border-top-color: var(--lvl-now); }
+  .kpi b { display: block; font-size: 13.5pt; font-weight: 800; color: var(--navy); line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .kpi span { display: block; font-size: 6.9pt; color: var(--muted); line-height: 1.3; margin-top: 2px; }
+
+  .summary { margin: 0; }
+
+  .pipeline { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+  .stage { position: relative; background: var(--panel); border-radius: 7px; padding: 7px 8px; }
+  .stage:not(:last-child)::after { content: "›"; position: absolute; right: -7px; top: 42%; color: var(--blue); font-weight: 800; font-size: 11pt; }
+  .stage .n { font-size: 6.6pt; font-weight: 800; color: var(--blue); letter-spacing: 1px; }
+  .stage .t { font-weight: 700; font-size: 8.2pt; color: var(--navy); margin: 1px 0 2px; }
+  .stage .d { font-size: 7.2pt; color: var(--muted); line-height: 1.35; }
+  .stage .o { font-size: 6.8pt; color: var(--gold); font-weight: 700; margin-top: 3px; }
+
+  .cols { display: grid; grid-template-columns: 1fr 2.28in; gap: 18px; }
+  .job { margin-bottom: 8px; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .job-title { font-weight: 700; font-size: 9.2pt; color: var(--navy); }
+  .job-dates { font-size: 7.6pt; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .job-org { color: var(--blue); font-weight: 600; font-size: 8pt; }
+  .job-sub { color: var(--muted); font-size: 7.4pt; margin-top: 1px; }
+  ul { margin: 4px 0 0; padding-left: 12px; }
+  li { margin-bottom: 2.2px; }
+  li::marker { color: var(--blue); }
+  .chips { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0 2px; }
+  .chips span { background: var(--blue-soft); color: var(--navy); border-radius: 999px; padding: 1px 7px; font-size: 7pt; font-weight: 600; }
+
+  aside .block { background: var(--panel); border-radius: 8px; padding: 6px 9px; margin-bottom: 6px; }
+  aside h2 { margin-top: 0; }
+  aside .block h2::after { display: none; }
+  .tags { display: flex; flex-wrap: wrap; gap: 3px; }
+  .tags span { background: #fff; border: 1px solid var(--rule); border-radius: 4px; padding: 0 5px; font-size: 7pt; color: var(--ink); }
+  .kv { margin: 0 0 5px; font-size: 7.6pt; }
+  .kv b { display: block; color: var(--navy); font-size: 8pt; }
+  .kv span { color: var(--muted); }
+  .meter { height: 6px; border-radius: 99px; background: #dde6ee; overflow: hidden; margin: 4px 0 4px; }
+  .meter i { display: block; height: 100%; width: 75.7%; background: var(--blue); border-radius: 99px; }
+  .big { font-size: 18pt; font-weight: 800; color: var(--navy); line-height: 1; }
+
+  .timeline { display: grid; gap: 3px; }
+  .tl-row { display: grid; grid-template-columns: 0.95in 1fr; gap: 8px; align-items: center; font-size: 7.4pt; }
+  .tl-org { color: var(--muted); }
+  .tl-lane { position: relative; height: 10px; background: var(--panel); border-radius: 3px; }
+  .tl-bar { position: absolute; top: 0; bottom: 0; border-radius: 3px; border-right: 1.5px solid #fff; }
+  .tl-axis { position: relative; height: 12px; margin-left: calc(0.95in + 8px); font-size: 6.8pt; color: var(--muted); }
+  .tl-axis span { position: absolute; transform: translateX(-50%); }
+  .legend { display: flex; gap: 12px; font-size: 6.9pt; color: var(--muted); margin-bottom: 5px; }
+  .legend i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+
+  .ventures { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .venture { border: 1px solid var(--rule); border-top: 2px solid var(--lvl-now); border-radius: 7px; padding: 7px 9px; }
+  .venture b { color: var(--navy); font-size: 8.4pt; display: block; }
+  .venture span { font-size: 7.3pt; color: var(--muted); display: block; line-height: 1.35; }
+  .venture a { font-size: 7pt; }
+  .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px 14px; }
+  .principles div { font-size: 7.6pt; color: var(--muted); }
+  .principles b { color: var(--navy); display: block; font-size: 8pt; }
+  footer { position: absolute; bottom: 0.2in; left: 0.46in; right: 0.46in; display: flex; justify-content: space-between; font-size: 7pt; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<section class="page">
+  <header>
+    <div>
+      <h1>Gopi K Kancharla</h1>
+      <div class="role-title">Engineering Co-Founder · AI-Native, Real-Time Decisioning Platforms</div>
+      <div class="tagline">Rules &amp; Decision Engines · Real-Time Streaming · AI Inference · Cloud-Native · 0→1 Builder</div>
+    </div>
+    <div class="contact">
+      Frisco, Texas · <strong>Open to Relocation</strong><br>
+      +1 469 388 2798 · <a href="mailto:haigopi@gmail.com">haigopi@gmail.com</a><br>
+      <a href="https://gopikancharla.com">gopikancharla.com</a> · <a href="https://www.linkedin.com/in/haigopi">linkedin.com/in/haigopi</a>
+    </div>
+  </header>
+
+  <div class="kpis">
+    <div class="kpi"><b>850M+</b><span>events/day streamed into decisioning</span></div>
+    <div class="kpi"><b>99.99%</b><span>availability at 4M+ transactions/day</span></div>
+    <div class="kpi now"><b>&lt;6 mo</b><span>to build a lending product from scratch</span></div>
+    <div class="kpi now"><b>$30B</b><span>originations on that product</span></div>
+    <div class="kpi"><b>120</b><span>engineers led across global teams</span></div>
+    <div class="kpi"><b>4</b><span>ventures founded, one to exit</span></div>
+  </div>
+
+  <h2>Summary</h2>
+  <p class="summary">
+    Engineering leader and founder who builds real-time decisioning platforms at financial-services scale — decisioning engines and rules platforms on <strong>graph databases, Rete networks, and bitmap indexes</strong>; consumer loan decisioning, multi-lending, and pricing; and Kafka streaming at 850M+ events/day.
+    20+ years in distributed systems and 7+ years leading global organizations as a manager of managers. Founded and built four ventures from idea to production, including one to a successful exit. Pairs startup speed with enterprise-grade discipline in security, resiliency, and governance.
+  </p>
+
+  <h2>Decisioning Platform Experience</h2>
+  <div class="pipeline">
+    <div class="stage"><div class="n">01</div><div class="t">Stream</div><div class="d">Kafka pipelines and lakehouse at 850M+ events/day feeding analytics and decisioning.</div><div class="o">Capital One</div></div>
+    <div class="stage"><div class="n">02</div><div class="t">Rules &amp; Decision Engines</div><div class="d">Engines on graph DBs, Rete networks, bitmap indexes; loan decisioning, multi-lending, pricing.</div><div class="o">Capital One · Toyota</div></div>
+    <div class="stage"><div class="n">03</div><div class="t">AI Inference</div><div class="d">Governed credit-risk models: +15% approvals, −20% defaults; MLOps end to end.</div><div class="o">Toyota · Capital One</div></div>
+    <div class="stage"><div class="n">04</div><div class="t">Decide at Scale</div><div class="d">99.99% at 4M+ txns/day; low-latency trading where downtime is loss.</div><div class="o">Toyota · IPC</div></div>
+    <div class="stage"><div class="n">05</div><div class="t">Observe &amp; Govern</div><div class="d">SLOs, observability, model governance, policy-as-code; risk incidents −25%.</div><div class="o">Toyota</div></div>
+  </div>
+
+  <div class="cols">
+    <main>
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="job-head"><span class="job-title">Head of Technology, Banking &amp; Commercial / Consumer Lending</span><span class="job-dates">03/2025 – Present</span></div>
+        <div class="job-org">Toyota Financial Services · Plano, TX</div>
+        <div class="chips"><span>$185M portfolio</span><span>$30B originations</span><span>99.99% uptime</span><span>3× release velocity</span></div>
+        <ul>
+          <li>Built a commercial loan origination product <strong>from scratch in under six months</strong>, now supporting $30B in originations across dealer and commercial-finance journeys.</li>
+          <li>Own engineering vision, architecture, execution, and production accountability for core lending platforms; direct a $185M annual technology portfolio.</li>
+          <li>Built governed AI/ML credit-risk and CX capabilities with monitoring, auditability, and human oversight — <strong>+15% approval rates, −20% defaults</strong>.</li>
+          <li>SLO-driven reliability, observability, and playbooks sustaining <strong>99.99%</strong> availability at 4M+ transactions/day.</li>
+          <li>Cloud-native, multi-cloud foundations (IaC, Kubernetes, CI/CD) cutting run cost by <strong>$12M/yr</strong>; configuration-driven UI platform took change cycles from one month to ~5 minutes, avoiding $6M/yr.</li>
+          <li>Security-by-design across the SDLC — threat modeling, IAM, policy-as-code — reducing risk incidents 25%.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><span class="job-title">Director, Software Engineering — Decisioning, MarTech &amp; Analytics, Auto Finance</span><span class="job-dates">02/2016 – 03/2025</span></div>
+        <div class="job-org">Capital One · Plano, TX</div>
+        <div class="job-sub">Director 2021–25 · Senior Manager 2019–21 · Manager 2017–19 · Master Software Engineer 2016–17</div>
+        <div class="chips"><span>120 engineers</span><span>$95M portfolio</span><span>850M+ events/day</span><span>$240M+ revenue impact</span></div>
+        <ul>
+          <li>Delivered <strong>consumer loan origination decisioning</strong>, multi-lending, and pricing platforms connecting policy, data, models, and APIs under regulatory and fair-lending controls.</li>
+          <li>Built and operated <strong>Kafka-based real-time streaming</strong> and lakehouse platforms processing 850M+ events/day for analytics, decisioning, and personalization.</li>
+          <li>Built AI/ML and MLOps infrastructure for model training, deployment, monitoring, and governance.</li>
+          <li>MarTech platform strategy delivering <strong>$240M+</strong> revenue impact; AWS modernization cutting spend <strong>$18M/yr</strong>.</li>
+        </ul>
+      </div>
+    </main>
+    <aside>
+      <h2>Core Strengths</h2>
+      <div class="block">
+        <div class="kv"><b>Decisioning</b></div>
+        <div class="tags"><span>Real-time decisioning</span><span>Rete rules engines</span><span>Graph databases</span><span>Bitmap indexes</span><span>Rules orchestration</span><span>Credit risk</span><span>Pricing</span><span>Explainability</span></div>
+      </div>
+      <div class="block">
+        <div class="kv"><b>Streaming &amp; Distributed</b></div>
+        <div class="tags"><span>Kafka</span><span>Event-driven</span><span>Low latency</span><span>Microservices</span><span>APIs</span><span>Fault tolerance</span><span>Resiliency / DR</span></div>
+      </div>
+      <div class="block">
+        <div class="kv"><b>AI &amp; Data</b></div>
+        <div class="tags"><span>Model inference</span><span>MLOps / LLMOps</span><span>Model governance</span><span>Model routing</span><span>Lakehouse</span><span>GenAI &amp; agents</span></div>
+      </div>
+      <div class="block">
+        <div class="kv"><b>Cloud-Native &amp; Security</b></div>
+        <div class="tags"><span>AWS · Azure · GCP</span><span>Kubernetes</span><span>Terraform</span><span>CI/CD</span><span>DevSecOps</span><span>SRE &amp; SLOs</span><span>Observability</span><span>Policy-as-code</span><span>IAM</span></div>
+      </div>
+      <div class="block">
+        <div class="kv"><b>Leadership</b></div>
+        <div class="tags"><span>Engineering vision</span><span>0→1 building</span><span>Scaling global orgs</span><span>Cross-functional pods</span><span>Product partnership</span><span>Exec communication</span></div>
+      </div>
+    </aside>
+  </div>
+  <footer><span>Gopi K Kancharla · Resume</span><span>1 / 2</span></footer>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  <div class="cols">
+    <main>
+      <h2 style="margin-top:2px">Experience (continued)</h2>
+      <div class="job">
+        <div class="job-head"><span class="job-title">Senior Cloud Software Architect / Engineering Leader</span><span class="job-dates">05/2011 – 01/2016</span></div>
+        <div class="job-org">Dell EMC / EMC Corporation · New Jersey &amp; Texas</div>
+        <div class="chips"><span>Petabyte scale</span><span>$25M customer savings</span><span>$11M programs</span></div>
+        <ul>
+          <li>Owned architecture for ECS, ViPR, and UIM cloud and object-storage platforms serving global enterprise and financial-services customers.</li>
+          <li>Designed distributed, fault-tolerant, DR-ready systems with stringent throughput, latency, and durability requirements.</li>
+          <li>Reusable patterns, APIs, orchestration, and provisioning automation generating $25M in customer operational savings.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><span class="job-title">Frontend Engineering Leader · Principal UI Engineer</span><span class="job-dates">10/2009 – 05/2011</span></div>
+        <div class="job-org">IPC Systems Inc. · Fairfield, CT</div>
+        <ul>
+          <li>Next-generation capital-markets trading platforms — real-time market data and low-latency execution where downtime carries direct trading loss; led a global team of 60+.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><span class="job-title">Lead Software Engineer</span><span class="job-dates">01/2008 – 05/2009</span></div>
+        <div class="job-org">Adesa Inc. · Carmel, IN</div>
+        <ul><li>Online vehicle auction, inventory, and live auction-floor systems with real-time bidding and settlement.</li></ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><span class="job-title">Technical Lead · Senior Systems Engineer</span><span class="job-dates">08/2004 – 01/2008</span></div>
+        <div class="job-org">IBM · Bengaluru, India &amp; Bari, Italy</div>
+        <ul><li>ACG Express and enterprise systems on Java/J2EE, web services, CRM, and integration technologies.</li></ul>
+      </div>
+    </main>
+    <aside>
+      <h2 style="margin-top:2px">Patents &amp; Writing</h2>
+      <div class="block">
+        <span class="big">28</span> <span style="color:var(--muted)">of 37 issued patents as primary inventor</span>
+        <div class="meter"><i></i></div>
+        <div class="kv"><span>Distributed systems, cloud storage, resiliency, automation · <a href="https://scholar.google.com/citations?user=cpw488YAAAAJ">Google Scholar</a></span></div>
+      </div>
+      <div class="block">
+        <span class="big">100+</span> <span style="color:var(--muted)">articles</span>
+        <div class="kv" style="margin-top:4px"><span>Founder &amp; author, <a href="https://medium.com/thinkspecial">ThinkSpecial</a>. Speaker at Cloud Expo International, DZone Live, and executive forums.</span></div>
+      </div>
+      <h2>Education</h2>
+      <div class="kv"><b>M.S., Information Systems · 2003</b><span>Nagarjuna University, Guntur, India</span></div>
+      <div class="kv"><b>B.C.A., Computer Applications · 2001</b><span>Nagarjuna University, India</span></div>
+      <h2>Certifications</h2>
+      <div class="kv"><span>AWS Certified Solutions Architect · SAFe Certified · Java Certification</span></div>
+    </aside>
+  </div>
+
+  <h2>Career Timeline</h2>
+  <div class="legend">
+    <span><i style="background:var(--lvl-1)"></i>Engineer</span>
+    <span><i style="background:var(--lvl-2)"></i>Lead / Architect</span>
+    <span><i style="background:var(--lvl-3)"></i>Manager</span>
+    <span><i style="background:var(--lvl-4)"></i>Director</span>
+    <span><i style="background:var(--lvl-now)"></i>Head of Technology</span>
+  </div>
+  <div class="timeline" id="timeline"></div>
+
+  <h2>Founder · 0→1 Ventures</h2>
+  <div class="ventures">
+    <div class="venture"><b>RunningTicker.com</b><span>Financial analytics platform, built from zero to a successful exit.</span></div>
+    <div class="venture"><b>RentMitra Inc.</b><span>AI-powered rental marketplace for owners and tenants.</span><a href="https://rentmitra.lovable.app">rentmitra.lovable.app</a></div>
+    <div class="venture"><b>GingerKnife Inc.</b><span>AI-backed HomeChefs marketplace for healthy homemade food.</span><a href="https://VantaShala.com">VantaShala.com</a></div>
+    <div class="venture"><b>AlliBilli.com</b><span>All-in-one news platform designed for elderly users.</span><a href="https://allibilli.com">allibilli.com</a></div>
+  </div>
+
+  <h2>How I Lead</h2>
+  <div class="principles">
+    <div><b>Bias for action</b>Decide quickly with data and customer insight; learn in short cycles.</div>
+    <div><b>Ownership</b>Clear outcomes and decentralized decision rights — teams own results.</div>
+    <div><b>Guardrails</b>Make the safe path the easiest path: speed with enterprise discipline.</div>
+    <div><b>Measurement</b>Instrument adoption, quality, reliability, and risk.</div>
+    <div><b>Transparency</b>Open context across product, architecture, and operations.</div>
+    <div><b>People</b>Autonomy, coaching, and growth for every engineer.</div>
+  </div>
+  <footer><span>gopikancharla.com · haigopi@gmail.com · +1 469 388 2798</span><span>2 / 2</span></footer>
+</section>
+
+<script>
+  (function () {
+    var START = 2004, END = 2026, span = END + 0.75 - START;
+    var pct = function (y) { return ((y - START) / span * 100) + "%"; };
+    var rows = [
+      ["IBM", [[2004.58, 2006.92, 1], [2006.92, 2008, 2]]],
+      ["Adesa", [[2008, 2009.33, 2]]],
+      ["IPC Systems", [[2009.75, 2010.33, 2], [2010.33, 2011.33, 3]]],
+      ["Dell EMC", [[2011.33, 2013.5, 1], [2013.5, 2016, 2]]],
+      ["Capital One", [[2016.08, 2017.17, 2], [2017.17, 2019.17, 3], [2019.17, 2021.92, 3], [2021.92, 2025.17, 4]]],
+      ["Toyota Financial", [[2025.17, 2026.75, "now"]]]
+    ];
+    var tl = document.getElementById("timeline");
+    rows.forEach(function (r) {
+      var row = document.createElement("div"); row.className = "tl-row";
+      var org = document.createElement("span"); org.className = "tl-org"; org.textContent = r[0];
+      var lane = document.createElement("div"); lane.className = "tl-lane";
+      r[1].forEach(function (s) {
+        var b = document.createElement("span"); b.className = "tl-bar";
+        b.style.left = pct(s[0]); b.style.width = ((s[1] - s[0]) / span * 100) + "%";
+        b.style.background = "var(--lvl-" + s[2] + ")"; lane.appendChild(b);
+      });
+      row.appendChild(org); row.appendChild(lane); tl.appendChild(row);
+    });
+    var axis = document.createElement("div"); axis.className = "tl-axis";
+    for (var y = START; y <= END; y += 2) { var t = document.createElement("span"); t.style.left = pct(y); t.textContent = y; axis.appendChild(t); }
+    tl.appendChild(axis);
+  })();
+</script>
+</body>
+</html>

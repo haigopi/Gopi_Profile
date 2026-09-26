@@ -1,0 +1,128 @@
+GOPI K KANCHARLA
+Frisco, Texas, USA | Open to Relocation | +1 469 388 2798 | haigopi@gmail.com
+GopiKancharla.com | LinkedIn: https://www.linkedin.com/in/haigopi
+Google Scholar: https://scholar.google.com/citations?user=cpw488YAAAAJ
+
+ENGINEERING CO-FOUNDER | AI-NATIVE, REAL-TIME DECISIONING PLATFORMS
+Decisioning and Rules Engines | Real-Time Streaming | AI/ML Inference | Cloud-Native Distributed Systems | 0-to-1 Builder
+
+
+PROFESSIONAL SUMMARY
+
+Engineering leader and founder who builds real-time decisioning platforms at financial-services scale. Built decisioning engines and rules platforms using graph databases, Rete networks, and bitmap indexes; delivered consumer loan origination decisioning, multi-lending, and pricing platforms; and operated Kafka-based streaming pipelines processing 850M+ events per day that feed analytics and decisioning.
+
+20+ years in software engineering and large-scale distributed systems, including 7+ years leading global engineering organizations of up to 120 engineers as a manager of managers. Built a commercial loan origination product from scratch at Toyota in under six months, now supporting $30B in originations with 99.99% availability across applications processing 4M+ transactions per day.
+
+Entrepreneur and builder at heart: founded and personally built four ventures from idea to production, including a financial analytics platform taken from zero to a successful exit. Combines startup speed - bias for action, rapid iteration, decisions grounded in data and customer insight - with enterprise-grade engineering discipline in security, resiliency, governance, and operational excellence. Primary inventor on 28 issued patents in distributed systems, cloud storage, resiliency, and automation.
+
+
+SELECTED DECISIONING PLATFORM HIGHLIGHTS
+
+- Decisioning and rules engines: Built decisioning engines and rules platforms using graph databases, Rete networks, and bitmap indexes for fast, explainable rule evaluation over large policy and data sets.
+- Real-time streaming: Built and operated Kafka-based streaming pipelines and lakehouse platforms processing 850M+ events per day, feeding analytics, decisioning, and personalization.
+- AI inference in production: Built governed AI/ML credit-risk capabilities with model monitoring, auditability, and human oversight, driving a 15% lift in approval rates and a 20% reduction in defaults.
+- Resiliency at scale: Sustained 99.99% availability across mission-critical applications processing 4M+ transactions per day; delivered low-latency capital-markets trading platforms where downtime carries direct loss.
+- Greenfield delivery: Built a commercial loan origination product from scratch in under six months with focused cross-functional teams, rapid feedback loops, and clear decision rights.
+
+
+CORE COMPETENCIES
+
+Decisioning Platforms: Real-Time Decisioning | Rules Engines and Rete Networks | Graph Databases | Bitmap Indexes | Rules Execution and Orchestration | Credit-Risk and Lending Decisioning | Pricing and Multi-Lending | Explainability and Auditability
+
+Streaming and Distributed Systems: Kafka and Event-Driven Architecture | Real-Time Data Pipelines | High-Throughput, Low-Latency Systems | Microservices and API Platforms | Fault Tolerance | Horizontal Scalability | Capacity and Performance Engineering
+
+AI and Data: AI/ML Inference and Model Serving | MLOps and LLMOps | Model Governance and Monitoring | Model Selection and Routing | Data Lakes and Lakehouses | GenAI and Agentic Systems
+
+Cloud-Native Platform: Multi-Cloud (AWS, Azure, GCP) | Kubernetes and Containers | Infrastructure-as-Code (Terraform) | CI/CD and DevSecOps | Observability and SRE | SLOs and Error Budgets | Resiliency and Disaster Recovery
+
+Security and Risk: Security-by-Design | Secure SDLC | Threat Modeling | Identity and Access Management | Policy-as-Code | Regulatory Compliance | Audit Readiness
+
+Leadership: Engineering Vision and Strategy | 0-to-1 Product Building | Scaling Global Engineering Organizations | Empowered Cross-Functional Teams | Engineering Metrics and Operating Rhythms | Product Partnership | Executive Communication
+
+
+PROFESSIONAL EXPERIENCE
+
+TOYOTA FINANCIAL SERVICES - Plano, Texas
+Head of Technology, Banking and Commercial Lending / Consumer Lending
+03/2025 - Present
+
+- Built a commercial loan origination product from scratch in under six months, now supporting $30B in originations across critical dealer and commercial-finance journeys with stringent availability and data-integrity requirements.
+- Own engineering vision, architecture, execution, and production accountability for core lending platforms in a regulated environment, directing a $185M annual technology portfolio.
+- Built AI/ML-enabled credit-risk and customer-experience capabilities with governed model access, monitoring, auditability, and human oversight, driving a 15% lift in approval rates and a 20% reduction in defaults.
+- Established SLO-driven reliability engineering, observability, platform guardrails, and operational playbooks that sustained 99.99% availability across mission-critical applications processing 4M+ transactions per day.
+- Architected cloud-native, multi-cloud foundations with Infrastructure-as-Code, Kubernetes, automated CI/CD, and observability, reducing annual cloud and infrastructure run cost by $12M.
+- Tripled release velocity through end-to-end DevSecOps, API automation, and reusable platform capabilities; a configuration-driven UI platform cut selected change cycles from one month to about five minutes, avoiding $6M in annual delivery cost.
+- Institutionalized security-by-design across the SDLC - threat modeling, vulnerability management, identity and access controls, policy-as-code - reducing risk incidents by 25%.
+- Set engineering metrics, governance, and operating rhythms; recruit and develop engineering managers and senior technical leaders who own outcomes end to end.
+
+CAPITAL ONE - Plano, Texas
+02/2016 - 03/2025
+Director, Software Engineering - Marketing Technology and Analytics, Decisioning, Auto Finance | 12/2021 - 03/2025
+Senior Manager, Software Engineering | 03/2019 - 11/2021
+Manager, Software Engineering | 03/2017 - 02/2019
+Master Software Engineer | 02/2016 - 02/2017
+
+- Delivered consumer loan origination decisioning systems and multi-lending and pricing platforms connecting business policy, data, models, APIs, and digital experiences under strict regulatory and fair-lending controls.
+- Built and operated high-throughput, Kafka-based real-time streaming pipelines feeding analytics, decisioning, and personalization, processing 850M+ events per day across data lake and lakehouse architectures.
+- Built AI/ML and MLOps infrastructure for model training, deployment, monitoring, and governance across targeting, experimentation, and decisioning use cases.
+- Led global engineering organizations of up to 120 engineers across regions and time zones, owning a $95M annual portfolio; progressed through four engineering leadership levels in nine years.
+- Defined and executed a marketing-technology platform strategy that reduced vendor lock-in, strengthened data governance, and delivered $240M+ in revenue impact.
+- Drove cloud-native modernization on AWS with Infrastructure-as-Code, containers, CI/CD, and observability, reducing infrastructure and licensing spend by $18M annually.
+
+DELL EMC / EMC CORPORATION - New Jersey and Texas
+Senior Cloud Software Architect / Engineering Leader | 07/2013 - 01/2016
+Cloud Engineer Specialist | 05/2011 - 07/2013
+
+- Owned architecture for ECS, ViPR, and UIM enterprise cloud and object-storage platforms serving global enterprise and financial-services customers at petabyte scale.
+- Designed distributed, fault-tolerant, highly available, disaster-recovery-ready systems with stringent throughput, latency, and durability requirements.
+- Created reusable architecture patterns, APIs, orchestration, and provisioning automation that generated $25M in operational savings for enterprise customers; led $11M multi-year programs across global teams.
+
+IPC SYSTEMS INC. - Fairfield, Connecticut
+Frontend Engineering Leader | 05/2010 - 05/2011
+Principal UI Engineer | 10/2009 - 05/2010
+
+- Delivered next-generation capital-markets trading platforms handling real-time market data and low-latency execution, where downtime carries direct trading loss; led a globally distributed team of 60+.
+
+ADESA INC. - Carmel, Indiana
+Lead Software Engineer - Java/J2EE | 01/2008 - 05/2009
+
+- Led full-stack delivery of online vehicle auction, inventory, and live auction-floor systems with real-time bidding and settlement workflows.
+
+IBM - Bengaluru, India and Bari, Italy
+Technical Lead | 12/2006 - 01/2008
+Senior Systems Engineer / Systems Engineer | 08/2004 - 12/2006
+
+- Delivered ACG Express capabilities and enterprise systems using Java/J2EE, web services, CRM, database, and integration technologies.
+
+
+ENTREPRENEURIAL AND 0-TO-1 PLATFORM LEADERSHIP
+
+Founded and personally built four ventures from concept to production, owning product strategy, architecture, engineering, launch, and iteration with real customers.
+
+- RunningTicker.com: Conceived and scaled a financial analytics platform from zero to a successful exit.
+- RentMitra Inc.: AI-powered rental marketplace connecting property owners and tenants through automated workflows (https://rentmitra.lovable.app).
+- GingerKnife Inc. / VantaShala.com: AI-backed HomeChefs marketplace built from the ground up (https://VantaShala.com).
+- AlliBilli.com: All-in-one news platform designed for elderly users (https://allibilli.com).
+
+
+PATENTS, PUBLICATIONS, AND THOUGHT LEADERSHIP
+
+- Primary inventor on 28 issued patents from 37 filings in distributed systems, cloud storage, resiliency, and automation.
+- Founder and author of ThinkSpecial, with 100+ articles on engineering, distributed systems, architecture, AI, and leadership (https://medium.com/thinkspecial).
+- Speaker at Cloud Expo International, DZone Live, and enterprise executive forums on distributed systems, cloud architecture, and engineering leadership.
+
+
+EDUCATION
+
+Master of Science, Information Systems - Nagarjuna University, Guntur, India | 2003
+Bachelor of Computer Applications - Nagarjuna University, India | 2001
+
+
+CERTIFICATIONS
+
+AWS Certified Solutions Architect | SAFe Certified | Java Certification
+
+
+LOCATION AND AVAILABILITY
+
+Based in Frisco, Texas | Open to relocation | Portfolio: https://gopikancharla.com
